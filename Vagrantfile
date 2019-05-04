@@ -12,8 +12,13 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "bento/ubuntu-18.04"
+  config.vm.box = "damianlewis/ubuntu-18.04-nginx-php"
+  config.vm.box_version = "1.0.0"
   config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.network "private_network", ip: "192.168.50.4"
+  #added for windows as I wasn't getting a command prompt on vagrant ssh
+  config.ssh.extra_args = "-tt"
+  config.vm.synced_folder "./var/www/", "/var/www/"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
