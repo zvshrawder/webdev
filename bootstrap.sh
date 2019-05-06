@@ -35,3 +35,14 @@ sudo apt-get install -y mariadb-server
 sudo apt-get -q -y install mariadb-client libmariadb3
 
 #import DB
+
+
+#server conf files
+sudo rm /etc/nginx/sites-enabled/default
+sudo cp /vagrant/etc/nginx/sites-enabled/zvshrawder.conf /etc/nginx/sites-enabled/zvshrawder.conf
+sudo cp /vagrant/etc/hosts /etc/hosts
+sudo cp /vagrant/etc/nginx/nginx.conf /etc/nginx/nginx.conf
+
+chmod -R 755 /var/log/
+
+sudo service nginx restart

@@ -8,3 +8,5 @@
 .vagrant/machines/default/virtualbox/synced_folders
 .vagrant/machines/default/virtualbox/vagrant_cwd
 .vagrant/rgloader/loader.rb
+var/www/html/index.html
+var/www/html/index.nginx-debian.html
