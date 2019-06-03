@@ -50,3 +50,7 @@ sudo chmod -R 775 /var/www/
 
 sudo service php7.2-fpm restart
 sudo service nginx restart
+
+mysql -uroot -proot -e "create database zvshrawder;"
+mysql -uroot -proot -e "create user 'zvshrawder'@'localhost' identified by 'd-Q:FaW[A*C@?g7T';"
+mysql -uroot -proot -e "GRANT ALL PRIVILEGES ON zvshrawder.* TO 'zvshrawder'@'localhost';"
