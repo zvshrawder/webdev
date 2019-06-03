@@ -42,6 +42,8 @@ sudo cp /vagrant/etc/nginx/sites-enabled/zvshrawder.conf /etc/nginx/sites-enable
 sudo cp /vagrant/etc/hosts /etc/hosts
 sudo cp /vagrant/etc/nginx/nginx.conf /etc/nginx/nginx.conf
 sudo cp  /vagrant/etc/php/7.2/fpm/pool.d/www.conf /etc/php/7.2/fpm/pool.d/www.conf
+sudo cp  /vagrant/etc/php/7.2/fpm/php.ini /etc/php/7.2/fpm/php.ini
+sudo cp  /vagrant/etc/php/7.2/cli/php.ini /etc/php/7.2/cli/php.ini
 
 chmod -R 755 /var/log/
 
