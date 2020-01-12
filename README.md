@@ -8,3 +8,6 @@ Should rename later, to something more meaningful
 to get Vagrant and VirtualBox working.
 
 - Need to add both zvshrawder.com and www.zvshrawder.com for ip 192.168.50.4 to host machine hosts file.
+
+-Load mysql file in zvshrawder.com/ and cp the php.ini file into the appropriate directory
+-run  FLUSH PRIVILEGES; in mysql console
