@@ -9,6 +9,10 @@ Vagrant.configure("2") do |config|
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
+      config.vm.provider :virtualbox do |virtualbox_config|
+          virtualbox_config.memory = 2048
+          virtualbox_config.cpus = 2
+      end
 
 
   # Every Vagrant development environment requires a box. You can search for
