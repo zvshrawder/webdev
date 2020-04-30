@@ -5,6 +5,7 @@
 # configures the configuration version (we support older styles for
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
+# need to run (if not installed): vagrant plugin install vagrant-vbguest
 Vagrant.configure("2") do |config|
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
@@ -24,7 +25,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", ip: "192.168.50.4"
   #added for windows as I wasn't getting a command prompt on vagrant ssh
   config.ssh.extra_args = "-tt"
-  config.vm.synced_folder "./var/www/", "/var/www/"
+  config.vm.synced_folder "./var/www/", "/var/www/", type:"smb"
 
 
 
