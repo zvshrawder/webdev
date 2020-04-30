@@ -11,7 +11,7 @@ sudo apt-get -q -y install composer
 
 sudo apt update
 sudo add-apt-repository --remove 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.1/ubuntu bionic main'
-sudo apt-get install software-properties-common
+sudo apt-get install -y software-properties-common
 echo Status: "Deb Maria DB key"
 sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.3/ubuntu bionic main'
 echo Status: "APT-get Update"
