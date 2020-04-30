@@ -1,0 +1,40 @@
+dateApplied: '2020-04-30 03:16:54'
+changes:
+  -
+    added:
+      fieldGroups.d044d57d-e908-441a-bfa5-d00ef711f4f6.name: Common
+  -
+    added:
+      siteGroups.762028af-e4c7-4515-a7ec-74fadae849b0.name: zvshrawder.com
+  -
+    added:
+      sites.1bad0c52-5282-456e-8c0f-5377dd4acd6a.baseUrl: $DEFAULT_SITE_URL
+      sites.1bad0c52-5282-456e-8c0f-5377dd4acd6a.handle: default
+      sites.1bad0c52-5282-456e-8c0f-5377dd4acd6a.hasUrls: true
+      sites.1bad0c52-5282-456e-8c0f-5377dd4acd6a.language: en-US
+      sites.1bad0c52-5282-456e-8c0f-5377dd4acd6a.name: zvshrawder.com
+      sites.1bad0c52-5282-456e-8c0f-5377dd4acd6a.primary: true
+      sites.1bad0c52-5282-456e-8c0f-5377dd4acd6a.siteGroup: 762028af-e4c7-4515-a7ec-74fadae849b0
+      sites.1bad0c52-5282-456e-8c0f-5377dd4acd6a.sortOrder: 1
+  -
+    added:
+      dateModified: 1588216611
+  -
+    added:
+      email.fromEmail: zvshrawder@gmail.com
+      email.fromName: zvshrawder.com
+      email.transportType: craft\mail\transportadapters\Sendmail
+  -
+    added:
+      system.edition: solo
+      system.name: zvshrawder.com
+      system.live: true
+      system.schemaVersion: 3.4.10
+      system.timeZone: America/Los_Angeles
+  -
+    added:
+      users.requireEmailVerification: true
+      users.allowPublicRegistration: false
+      users.defaultGroup: null
+      users.photoVolumeUid: null
+      users.photoSubpath: ''
