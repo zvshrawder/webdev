@@ -36,6 +36,7 @@ return array(
     'craftcms\\oauth2\\client\\' => array($vendorDir . '/craftcms/oauth2-craftid/src'),
     'craft\\composer\\' => array($vendorDir . '/craftcms/plugin-installer/src'),
     'craft\\' => array($vendorDir . '/craftcms/cms/src'),
+    'club\\assetrev\\' => array($vendorDir . '/clubstudioltd/craft-asset-rev/src'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
     'XdgBaseDir\\' => array($vendorDir . '/dnoegel/php-xdg-base-dir/src'),
     'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),

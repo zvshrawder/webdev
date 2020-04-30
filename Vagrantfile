@@ -1,32 +1,39 @@
+# need to run (if not installed): vagrant plugin install vagrant-vbguest  
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-# All Vagrant configuration is done below. The "2" in Vagrant.configure
-# configures the configuration version (we support older styles for
-# backwards compatibility). Please don't change it unless you know what
-# you're doing.
-# need to run (if not installed): vagrant plugin install vagrant-vbguest
-Vagrant.configure("2") do |config|
-  # The most common configuration options are documented and commented below.
-  # For a complete reference, please see the online documentation at
-  # https://docs.vagrantup.com.
-      config.vm.provider :virtualbox do |virtualbox_config|
-          virtualbox_config.memory = 2048
-          virtualbox_config.cpus = 2
-      end
+# Determine if we are running on windows
+require 'rbconfig'
+is_windows = (RbConfig::CONFIG['host_os'] =~ /mswin|mingw|cygwin/)
 
+Vagrant.configure(2) do |config|
 
-  # Every Vagrant development environment requires a box. You can search for
-  # boxes at https://vagrantcloud.com/search.
-   config.vm.box = "ubuntu/bionic64"
-  
+  config.vm.box = "ubuntu/bionic64"
 
-  config.vm.provision :shell, path: "bootstrap.sh"
+  # Port is usually the phone-coded first 4 characters of the final URL (eg. test.com = 8378)
+ 
+  config.vm.network "private_network", type: "dhcp"
   config.vm.network "private_network", ip: "192.168.50.4"
-  #added for windows as I wasn't getting a command prompt on vagrant ssh
-  config.ssh.extra_args = "-tt"
-  config.vm.synced_folder "./var/www/", "/var/www/", type:"smb"
+  # For windows use SMB else use NFS to sync files to guest host
+  if is_windows
+    config.vm.synced_folder "./var/www/", "/var/www/",
+      type: "smb",
+      owner: "www-data",
+      group: "www-data",
+      mount_options: [ "rw", "mfsymlinks" ]
+  else
+    config.vm.synced_folder "./var/www/", "/var/www/",
+      nfs: true,
+      mount_options: [ "rw", "tcp", "fsc", "actimeo=1" ]
+  end
 
+  # Set VirtualBox memory and allow symbolic links on Windows
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "2048"
+	vb.cpus = 2
+    vb.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
+  end
 
-
+  # Run the shell commands
+  config.vm.provision "shell", path: "bootstrap.sh"
 end

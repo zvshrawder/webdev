@@ -1,2 +1,0 @@
-[30-Apr-2020 02:31:17 UTC] PHP Warning:  unlink(/var/www/zvshrawder.com/storage/runtime/mutex/80b2c16fe9b48c2d2eb163c47b12c58a.lock): Text file busy in /var/www/zvshrawder.com/vendor/yiisoft/yii2/mutex/FileMutex.php on line 161
-[30-Apr-2020 02:31:17 UTC] PHP Warning:  unlink(/var/www/zvshrawder.com/storage/runtime/mutex/9ed29d072892f207e8222a942e1b5bd3.lock): Text file busy in /var/www/zvshrawder.com/vendor/yiisoft/yii2/mutex/FileMutex.php on line 161
