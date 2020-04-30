@@ -1,3 +1,4 @@
+#Took quite a bit from https://github.com/neonhomer/vagrant-craft-3 for the vagrant setup (scripting on the shell is mine
 # need to run (if not installed): vagrant plugin install vagrant-vbguest  
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
