@@ -1,0 +1,9 @@
+{
+
+
+  "js/jquery.js":"/js/jquery-3.5.0.min.js",
+  "js/bootstrap.js":"/js/bootstrap/bootstrap.min.js",
+
+  "css/bootstrap/bootstrap.css":"/css/bootstrap/bootstrap.min.css"
+
+}

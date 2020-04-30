@@ -34,6 +34,7 @@ return array(
     'creocoder\\nestedsets\\' => array($vendorDir . '/creocoder/yii2-nested-sets/src'),
     'crafttests\\fixtures\\' => array($vendorDir . '/craftcms/cms/tests/fixtures'),
     'craftcms\\oauth2\\client\\' => array($vendorDir . '/craftcms/oauth2-craftid/src'),
+    'craft\\redactor\\' => array($vendorDir . '/craftcms/redactor/src'),
     'craft\\composer\\' => array($vendorDir . '/craftcms/plugin-installer/src'),
     'craft\\' => array($vendorDir . '/craftcms/cms/src'),
     'club\\assetrev\\' => array($vendorDir . '/clubstudioltd/craft-asset-rev/src'),
