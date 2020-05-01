@@ -1,0 +1,37 @@
+{%set welcomeBox = block%}
+
+{% set id = welcomeBox.id %}
+
+{%set css %}
+
+    .welcomeBox_{{id}}
+    {
+        color:{{welcomeBox.textColor}};
+        background-color:{{welcomeBox.backgroundColor}};
+    }
+
+    .welcomeBoxHeadingText_{{id}}
+    {
+
+    }
+
+    .welcomeBoxBodyText_{{id}}
+    {
+
+    }
+
+
+{% endset %}
+<style type = text/css>
+    {{css}}
+</style>
+<div class="row welcomeBox_{{id}}">
+    <div class="col-lg-{{welcomeBox.columnSize}}">
+        <div class="welcomeBoxHeadingText_{{id}}">
+        {{welcomeBox.headingText}}
+        </div>
+        <div welcomeBoxBodyText_{{id}}>
+            {{welcomeBox.bodyText}}
+        </div>
+    </div>
+</div>

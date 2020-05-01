@@ -1,0 +1,5 @@
+<!--Output supplied Components with templates in the _components directory-->
+{%for block in entry.components%}
+{%include "_components/"~block.type%}
+
+{%endfor%}

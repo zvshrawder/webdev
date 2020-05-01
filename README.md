@@ -11,3 +11,7 @@ to get Vagrant and VirtualBox working.
 
 -Load mysql file in zvshrawder.com/ and cp the php.ini file into the appropriate directory
 -run  FLUSH PRIVILEGES; in mysql console
+
+
+-To run simply vagrant up and then vagrant ssh
+-Afterwards load the db dump sql file.

@@ -54,6 +54,8 @@ h4
 .header_quick_links
 {
     text-align: center;
+    margin-top:auto;
+    margin-bottom: auto;
 }
 
 /*nav bar*/
@@ -62,6 +64,8 @@ h4
 {
     background: #1d69ab;
     color: #FFFFF0;
+    margin-top:auto;
+    margin-bottom: auto;
 }
 
 
@@ -90,5 +94,9 @@ h4
 .footer_quick_links
 {
     text-align: center;
+    margin-top:auto;
+    margin-bottom: auto;
 }
+
+
 
