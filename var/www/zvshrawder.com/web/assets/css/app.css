@@ -71,8 +71,13 @@ h4
 
 
 /*footer*/
+.footer_container
+{
+    padding-top: 1em;
+}
 .footer_bar
 {
+
     background: #1d69ab;
     padding-left: 0;
     padding-right: 0;

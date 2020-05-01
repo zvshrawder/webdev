@@ -4,10 +4,17 @@
 
 {%set css %}
 
+
+
+
+
     .welcomeBox_{{id}}
     {
         color:{{welcomeBox.textColor}};
         background-color:{{welcomeBox.backgroundColor}};
+
+
+
     }
 
     .welcomeBoxHeadingText_{{id}}
@@ -20,18 +27,49 @@
 
     }
 
+    .welcomeBoxCol_{{id}}
+    {
+        padding-top:{{welcomeBox.textPaddingTop}}%;
+        padding-bottom:{{welcomeBox.textPaddingBottom}}%;
+        padding-right:{{welcomeBox.textPaddingRight}}%;
+        padding-left:{{welcomeBox.textPaddingLeft}}%;
+
+
+
+
+
+    }
+
+
+
+    .welcomeBoxHeadingText_{{id}}
+    {
+        text-align:{{welcomeBox.horizontalHeaderTextAlignment}};
+    }
+
+    .welcomeBoxBodyText_{{id}}
+    {
+        text-align:{{welcomeBox.horizontalBodyTextAlignment}};
+
+    }
+
 
 {% endset %}
 <style type = text/css>
     {{css}}
 </style>
+
+<div class="container">
 <div class="row welcomeBox_{{id}}">
-    <div class="col-lg-{{welcomeBox.columnSize}}">
+    <div class="col-lg-{{welcomeBox.columnSize}} welcomeBoxCol_{{id}}">
         <div class="welcomeBoxHeadingText_{{id}}">
         {{welcomeBox.headingText}}
         </div>
-        <div welcomeBoxBodyText_{{id}}>
+        <div class="welcomeBoxBodyText_{{id}}">
             {{welcomeBox.bodyText}}
         </div>
     </div>
 </div>
+</div>
+
+
