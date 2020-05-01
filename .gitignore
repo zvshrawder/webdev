@@ -10,3 +10,5 @@
 .vagrant/rgloader/loader.rb
 var/www/html/index.html
 var/www/html/index.nginx-debian.html
+ubuntu-bionic-18.04-cloudimg-console.log
+ubuntu-xenial-16.04-cloudimg-console.log

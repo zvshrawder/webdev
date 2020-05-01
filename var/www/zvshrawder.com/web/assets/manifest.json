@@ -3,7 +3,24 @@
 
   "js/jquery.js":"/js/jquery-3.5.0.min.js",
   "js/bootstrap.js":"/js/bootstrap/bootstrap.min.js",
+  "js/app.js":"/js/app.js",
 
-  "css/bootstrap/bootstrap.css":"/css/bootstrap/bootstrap.min.css"
+  "css/bootstrap/bootstrap.css":"/css/bootstrap/bootstrap.min.css",
+   "css/app.css":"/css/app.css",
+
+
+  "images/logo.png":"/images/logo.png",
+  "images/larger_logo.png":"images/larger_logo.png",
+
+
+
+
+  "favicon/android-chrome-192x192.png":"favicon/android-chrome-192x192.png",
+  "favicon/android-chrome-512x512.png":"favicon/android-chrome-512x512.png",
+  "favicon/apple-touch-icon.png":"favicon/apple-touch-icon.png",
+  "favicon/favicon.ico":"favicon/favicon.ico",
+  "favicon/favicon-16x16.png":"favicon/favicon-16x16.png",
+  "favicon/favicon-32x32.png":"favicon/favicon-32x32.png",
+  "favicon/site.webmanifest":"favicon/site.webmanifest"
 
 }

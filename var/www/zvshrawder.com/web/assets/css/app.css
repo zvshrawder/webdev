@@ -1,0 +1,94 @@
+/*root values*/
+
+:root
+{
+    font-family: Ubuntu;
+    font-size: 18px;
+}
+
+body
+{
+    font-family: Ubuntu;
+    font-size: 1rem;
+}
+
+h1
+{
+    font-size: 3rem;
+}
+h2
+{
+    font-size: 2.5rem;
+}
+h3
+{
+    font-size: 2rem;
+}
+h4
+{
+    font-size: 1.5rem;
+}
+
+
+/*header*/
+
+.header_bar
+ {
+     background: #1d69ab;
+     padding-left: 0;
+     padding-right: 0;
+     color: #FFFFF0;
+ }
+
+.header_logo_col
+{
+    background: #1d69ab;
+
+}
+.header_logo
+{
+    max-width: 75%;
+    background: #1d69ab;
+
+}
+.header_quick_links
+{
+    text-align: center;
+}
+
+/*nav bar*/
+
+.nav_bar
+{
+    background: #1d69ab;
+    color: #FFFFF0;
+}
+
+
+
+/*footer*/
+.footer_bar
+{
+    background: #1d69ab;
+    padding-left: 0;
+    padding-right: 0;
+
+    color: #FFFFF0;
+}
+
+.footer_logo_col
+{
+    background: #1d69ab;
+
+}
+.footer_logo
+{
+    background: #1d69ab;
+
+}
+
+.footer_quick_links
+{
+    text-align: center;
+}
+

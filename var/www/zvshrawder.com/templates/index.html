@@ -6,8 +6,15 @@
 {% set title = entry.heading %}
 
 {% block content %}
-<div class="intro">
+
+<header>
+
+</header>
+
+<main role="main" class="container">
+
+    <h1>{{ title }}</h1>
     {{ entry.body }}
-    {{dump(entry)}}
-</div>
+
+</main>
 {% endblock %}

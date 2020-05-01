@@ -4,7 +4,7 @@
 
     <meta charset="utf-8" />
     <title>{% if title is defined %}{{ title }} - {% endif %}ZVShrawder</title>
-    <meta name="viewport" content="width=1000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="home" href="{{ siteUrl }}" />
     <!--js-->
     <script type="text/javascript" src="{{rev('js/jquery.js')}}"></script>
@@ -12,21 +12,25 @@
 
     <!--css-->
     <link rel="stylesheet" type="text/css" href="{{rev('css/bootstrap/bootstrap.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{rev('css/app.css')}}" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{rev('favicon/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{rev('favicon/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{rev('favicon/favicon-16x16.png')}}">
+    <link rel="manifest" href="rev('favicon/site.webmanifest')">
+
 
 </head>
 
 <body>
-<header id="header">
+<!--page header and nav bar-->
+    {%include 'partials/header'%}
 
-<!--add Nav-->
-
-</header>
-
-<div id="main">
-    <header>
-        <h1>{{ title }}</h1>
-    </header>
-</div>
+    {% block content %}
+    You can’t see me!
+    {% endblock %}
+<!-- page footer-->
+{%include 'partials/footer'%}
 
 
 </body>

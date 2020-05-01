@@ -11,6 +11,6 @@ return array(
         'pipeline' => 'manifest|querystring|passthrough',
         'manifestPath' => 'web/assets/manifest.json',
         'assetsBasePath' => '../public/build/',
-        'assetUrlPrefix' => '@web/assets',
+        'assetUrlPrefix' => '@web/assets/',
     ),
 );
