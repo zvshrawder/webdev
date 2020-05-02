@@ -12,6 +12,12 @@
     {
         color:{{welcomeBox.textColor}};
         background-color:{{welcomeBox.backgroundColor}};
+        {%if welcomeBox.backgroundImage|length%}
+            background-image: url("{{welcomeBox.backgroundImage.first.url}}");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        {%endif%}
 
 
 
