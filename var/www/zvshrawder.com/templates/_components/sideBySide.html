@@ -19,7 +19,8 @@
 {%set css%}
     .sideBySideRow_{{sBS.id}}
     {
-        color:{{textColor}}
+        color:{{textColor}};
+
 
     }
 
@@ -30,7 +31,11 @@
             background-size: cover;
             background-repeat: no-repeat;
             height:{{compHeight}}rem;
+            text-align: left;
+            padding: 0;
+
         {%endif%}
+        background-color:{{sBS.backgroundColor}};
 
 
     }
@@ -43,7 +48,10 @@
             background-size: cover;
             background-repeat: no-repeat;
             height:{{compHeight}}rem;
+            text-align: right;
+            padding: 0;
         {%endif%}
+        background-color:{{sBS.backgroundColor}};
     }
 
     .sideBySideImage_{{sBS.id}}
@@ -56,13 +64,13 @@
 <style type = text/css>
     {{css}}
 </style>
+<div class="container">
+    <div class = "row sideBySideRow_{{sBS.id}} d-flex">
+        {{_self.leftCol(sBS, side, text, image, alt, breakOrder)}}
+        {{_self.rightCol(sBS, side, text, image, alt, breakOrder)}}
 
-<div class = "row sideBySideRow_{{sBS.id}} d-flex">
-    {{_self.leftCol(sBS, side, text, image, alt, breakOrder)}}
-    {{_self.rightCol(sBS, side, text, image, alt, breakOrder)}}
-
+    </div>
 </div>
-
 
 {% macro leftCol(sBS, side, text, image, alt, breakOrder) %}
     <div class="col-md-6 sideBySideLeftCol_{{sBS.id}}  order-lg-1 order-md-1{%if breakOrder == 'left'%} order-12{%endif%} ">
