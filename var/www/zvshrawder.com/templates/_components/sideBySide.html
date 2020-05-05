@@ -20,6 +20,7 @@
     .sideBySideRow_{{sBS.id}}
     {
         color:{{textColor}};
+        min-height:{{compHeight}}rem;
 
 
     }
@@ -30,7 +31,7 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            height:{{compHeight}}rem;
+            min-height:{{compHeight}}rem;
             text-align: left;
             padding: 0;
 
@@ -51,7 +52,7 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            height:{{compHeight}}rem;
+            min-height:{{compHeight}}rem;
             text-align: right;
             padding: 0;
         {%endif%}
@@ -64,7 +65,7 @@
 
     .sideBySideImage_{{sBS.id}}
     {
-        height:{{compHeight}}rem;
+        min-height:{{compHeight}}rem;
     }
 
 {%endset%}
