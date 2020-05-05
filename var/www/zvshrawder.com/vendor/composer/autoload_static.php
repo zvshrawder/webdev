@@ -71,6 +71,7 @@ class ComposerStaticInit4efd504ffd649f07a07e8b8b82d6dea8
         ),
         'e' => 
         array (
+            'ether\\seo\\' => 10,
             'enshrined\\svgSanitize\\' => 22,
         ),
         'c' => 
@@ -288,6 +289,10 @@ class ComposerStaticInit4efd504ffd649f07a07e8b8b82d6dea8
         'mikehaertl\\shellcommand\\' => 
         array (
             0 => __DIR__ . '/..' . '/mikehaertl/php-shellcommand/src',
+        ),
+        'ether\\seo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ether/seo/src',
         ),
         'enshrined\\svgSanitize\\' => 
         array (
@@ -4011,6 +4016,37 @@ class ComposerStaticInit4efd504ffd649f07a07e8b8b82d6dea8
         'enshrined\\svgSanitize\\data\\AttributeInterface' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/data/AttributeInterface.php',
         'enshrined\\svgSanitize\\data\\TagInterface' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/data/TagInterface.php',
         'enshrined\\svgSanitize\\data\\XPath' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/data/XPath.php',
+        'ether\\seo\\Seo' => __DIR__ . '/..' . '/ether/seo/src/Seo.php',
+        'ether\\seo\\console\\controllers\\UpgradeController' => __DIR__ . '/..' . '/ether/seo/src/console/controllers/UpgradeController.php',
+        'ether\\seo\\controllers\\RedirectsController' => __DIR__ . '/..' . '/ether/seo/src/controllers/RedirectsController.php',
+        'ether\\seo\\controllers\\SchemaController' => __DIR__ . '/..' . '/ether/seo/src/controllers/SchemaController.php',
+        'ether\\seo\\controllers\\SeoController' => __DIR__ . '/..' . '/ether/seo/src/controllers/SeoController.php',
+        'ether\\seo\\controllers\\SettingsController' => __DIR__ . '/..' . '/ether/seo/src/controllers/SettingsController.php',
+        'ether\\seo\\controllers\\SitemapController' => __DIR__ . '/..' . '/ether/seo/src/controllers/SitemapController.php',
+        'ether\\seo\\controllers\\sitemap\\XmlController' => __DIR__ . '/..' . '/ether/seo/src/controllers/sitemap/XmlController.php',
+        'ether\\seo\\fields\\SeoField' => __DIR__ . '/..' . '/ether/seo/src/fields/SeoField.php',
+        'ether\\seo\\integrations\\craftql\\GetCraftQLSchema' => __DIR__ . '/..' . '/ether/seo/src/integrations/craftql/GetCraftQLSchema.php',
+        'ether\\seo\\jobs\\UpgradeSeoDataJob' => __DIR__ . '/..' . '/ether/seo/src/jobs/UpgradeSeoDataJob.php',
+        'ether\\seo\\migrations\\Install' => __DIR__ . '/..' . '/ether/seo/src/migrations/Install.php',
+        'ether\\seo\\migrations\\m180906_152947_add_site_id_to_redirects' => __DIR__ . '/..' . '/ether/seo/src/migrations/m180906_152947_add_site_id_to_redirects.php',
+        'ether\\seo\\migrations\\m190114_152300_upgrade_to_new_data_format' => __DIR__ . '/..' . '/ether/seo/src/migrations/m190114_152300_upgrade_to_new_data_format.php',
+        'ether\\seo\\models\\Redirect' => __DIR__ . '/..' . '/ether/seo/src/models/Redirect.php',
+        'ether\\seo\\models\\Settings' => __DIR__ . '/..' . '/ether/seo/src/models/Settings.php',
+        'ether\\seo\\models\\Sitemap' => __DIR__ . '/..' . '/ether/seo/src/models/Sitemap.php',
+        'ether\\seo\\models\\data\\SeoData' => __DIR__ . '/..' . '/ether/seo/src/models/data/SeoData.php',
+        'ether\\seo\\models\\data\\SocialData' => __DIR__ . '/..' . '/ether/seo/src/models/data/SocialData.php',
+        'ether\\seo\\records\\RedirectRecord' => __DIR__ . '/..' . '/ether/seo/src/records/RedirectRecord.php',
+        'ether\\seo\\records\\SitemapRecord' => __DIR__ . '/..' . '/ether/seo/src/records/SitemapRecord.php',
+        'ether\\seo\\services\\RedirectsService' => __DIR__ . '/..' . '/ether/seo/src/services/RedirectsService.php',
+        'ether\\seo\\services\\SeoService' => __DIR__ . '/..' . '/ether/seo/src/services/SeoService.php',
+        'ether\\seo\\services\\SitemapService' => __DIR__ . '/..' . '/ether/seo/src/services/SitemapService.php',
+        'ether\\seo\\services\\UpgradeService' => __DIR__ . '/..' . '/ether/seo/src/services/UpgradeService.php',
+        'ether\\seo\\web\\assets\\RedirectsAsset' => __DIR__ . '/..' . '/ether/seo/src/web/assets/RedirectsAsset.php',
+        'ether\\seo\\web\\assets\\SeoFieldAsset' => __DIR__ . '/..' . '/ether/seo/src/web/assets/SeoFieldAsset.php',
+        'ether\\seo\\web\\assets\\SeoFieldSettingsAsset' => __DIR__ . '/..' . '/ether/seo/src/web/assets/SeoFieldSettingsAsset.php',
+        'ether\\seo\\web\\assets\\SeoSettingsAsset' => __DIR__ . '/..' . '/ether/seo/src/web/assets/SeoSettingsAsset.php',
+        'ether\\seo\\web\\twig\\Extension' => __DIR__ . '/..' . '/ether/seo/src/web/twig/Extension.php',
+        'ether\\seo\\web\\twig\\Variable' => __DIR__ . '/..' . '/ether/seo/src/web/twig/Variable.php',
         'lessc' => __DIR__ . '/..' . '/marcusschwarz/lesserphp/lessc.inc.php',
         'lessc_formatter_classic' => __DIR__ . '/..' . '/marcusschwarz/lesserphp/lessc.inc.php',
         'lessc_formatter_compressed' => __DIR__ . '/..' . '/marcusschwarz/lesserphp/lessc.inc.php',

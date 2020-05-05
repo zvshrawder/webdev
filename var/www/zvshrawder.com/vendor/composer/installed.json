@@ -854,6 +854,43 @@
         "description": "An SVG sanitizer for PHP"
     },
     {
+        "name": "ether/seo",
+        "version": "3.6.4",
+        "version_normalized": "3.6.4.0",
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ethercreative/seo/zipball/58de8d61979ce2e3030303f72fff92229118388f",
+            "reference": "58de8d61979ce2e3030303f72fff92229118388f",
+            "shasum": ""
+        },
+        "require": {
+            "craftcms/cms": "^3.2.0"
+        },
+        "time": "2020-04-15T15:17:16+00:00",
+        "type": "craft-plugin",
+        "extra": {
+            "handle": "seo",
+            "name": "SEO",
+            "developer": "Ether Creative",
+            "developerUrl": "https://ethercreative.co.uk",
+            "class": "ether\\seo\\Seo"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "ether\\seo\\": "src/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "description": "SEO utilities including a unique field type, sitemap, & redirect manager",
+        "support": {
+            "issues": "https://github.com/ethercreative/seo",
+            "docs": "https://github.com/ethercreative/seo/blob/v3/README.md"
+        }
+    },
+    {
         "name": "ezyang/htmlpurifier",
         "version": "v4.12.0",
         "version_normalized": "4.12.0.0",
