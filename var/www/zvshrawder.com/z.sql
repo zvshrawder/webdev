@@ -2933,23 +2933,23 @@ INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_plugins','craft_plu
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_projectconfig','PRIMARY','2020-05-05 01:45:35','n_diff_pfx01',899,11,'path');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_projectconfig','PRIMARY','2020-05-05 01:45:35','n_leaf_pages',11,NULL,'Number of leaf pages in the index');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_projectconfig','PRIMARY','2020-05-05 01:45:35','size',12,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','PRIMARY','2020-05-05 01:46:36','n_diff_pfx01',0,1,'id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','PRIMARY','2020-05-05 01:46:36','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','PRIMARY','2020-05-05 01:46:36','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_delay_idx','2020-05-05 01:46:36','n_diff_pfx01',0,1,'channel');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_delay_idx','2020-05-05 01:46:36','n_diff_pfx02',0,1,'channel,fail');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_delay_idx','2020-05-05 01:46:36','n_diff_pfx03',0,1,'channel,fail,timeUpdated');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_delay_idx','2020-05-05 01:46:36','n_diff_pfx04',0,1,'channel,fail,timeUpdated,delay');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_delay_idx','2020-05-05 01:46:36','n_diff_pfx05',0,1,'channel,fail,timeUpdated,delay,id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_delay_idx','2020-05-05 01:46:36','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_delay_idx','2020-05-05 01:46:36','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_timePushed_idx','2020-05-05 01:46:36','n_diff_pfx01',0,1,'channel');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_timePushed_idx','2020-05-05 01:46:36','n_diff_pfx02',0,1,'channel,fail');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_timePushed_idx','2020-05-05 01:46:36','n_diff_pfx03',0,1,'channel,fail,timeUpdated');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_timePushed_idx','2020-05-05 01:46:36','n_diff_pfx04',0,1,'channel,fail,timeUpdated,timePushed');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_timePushed_idx','2020-05-05 01:46:36','n_diff_pfx05',0,1,'channel,fail,timeUpdated,timePushed,id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_timePushed_idx','2020-05-05 01:46:36','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_timePushed_idx','2020-05-05 01:46:36','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','PRIMARY','2020-05-05 01:51:44','n_diff_pfx01',0,1,'id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','PRIMARY','2020-05-05 01:51:44','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','PRIMARY','2020-05-05 01:51:44','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_delay_idx','2020-05-05 01:51:44','n_diff_pfx01',0,1,'channel');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_delay_idx','2020-05-05 01:51:44','n_diff_pfx02',0,1,'channel,fail');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_delay_idx','2020-05-05 01:51:44','n_diff_pfx03',0,1,'channel,fail,timeUpdated');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_delay_idx','2020-05-05 01:51:44','n_diff_pfx04',0,1,'channel,fail,timeUpdated,delay');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_delay_idx','2020-05-05 01:51:44','n_diff_pfx05',0,1,'channel,fail,timeUpdated,delay,id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_delay_idx','2020-05-05 01:51:44','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_delay_idx','2020-05-05 01:51:44','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_timePushed_idx','2020-05-05 01:51:44','n_diff_pfx01',0,1,'channel');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_timePushed_idx','2020-05-05 01:51:44','n_diff_pfx02',0,1,'channel,fail');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_timePushed_idx','2020-05-05 01:51:44','n_diff_pfx03',0,1,'channel,fail,timeUpdated');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_timePushed_idx','2020-05-05 01:51:44','n_diff_pfx04',0,1,'channel,fail,timeUpdated,timePushed');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_timePushed_idx','2020-05-05 01:51:44','n_diff_pfx05',0,1,'channel,fail,timeUpdated,timePushed,id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_timePushed_idx','2020-05-05 01:51:44','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_queue','craft_queue_channel_fail_timeUpdated_timePushed_idx','2020-05-05 01:51:44','size',1,NULL,'Number of pages in the index');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_relations','PRIMARY','2020-05-05 00:02:48','n_diff_pfx01',19,1,'id');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_relations','PRIMARY','2020-05-05 00:02:48','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_relations','PRIMARY','2020-05-05 00:02:48','size',1,NULL,'Number of pages in the index');
@@ -3018,25 +3018,25 @@ INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sections_sites','cr
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sequences','PRIMARY','2020-05-04 13:23:52','n_diff_pfx01',0,1,'name');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sequences','PRIMARY','2020-05-04 13:23:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sequences','PRIMARY','2020-05-04 13:23:52','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','PRIMARY','2020-05-05 01:46:27','n_diff_pfx01',9,1,'id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','PRIMARY','2020-05-05 01:46:27','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','PRIMARY','2020-05-05 01:46:27','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-05-05 01:46:27','n_diff_pfx01',9,1,'dateUpdated');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-05-05 01:46:27','n_diff_pfx02',9,1,'dateUpdated,id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-05-05 01:46:27','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-05-05 01:46:27','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-05-05 01:46:27','n_diff_pfx01',9,1,'token');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-05-05 01:46:27','n_diff_pfx02',9,1,'token,id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-05-05 01:46:27','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-05-05 01:46:27','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-05-05 01:46:27','n_diff_pfx01',9,1,'uid');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-05-05 01:46:27','n_diff_pfx02',9,1,'uid,id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-05-05 01:46:27','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-05-05 01:46:27','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-05-05 01:46:27','n_diff_pfx01',1,1,'userId');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-05-05 01:46:27','n_diff_pfx02',9,1,'userId,id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-05-05 01:46:27','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-05-05 01:46:27','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','PRIMARY','2020-05-05 01:57:04','n_diff_pfx01',9,1,'id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','PRIMARY','2020-05-05 01:57:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','PRIMARY','2020-05-05 01:57:04','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-05-05 01:57:04','n_diff_pfx01',9,1,'dateUpdated');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-05-05 01:57:04','n_diff_pfx02',9,1,'dateUpdated,id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-05-05 01:57:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-05-05 01:57:04','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-05-05 01:57:04','n_diff_pfx01',9,1,'token');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-05-05 01:57:04','n_diff_pfx02',9,1,'token,id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-05-05 01:57:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-05-05 01:57:04','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-05-05 01:57:04','n_diff_pfx01',9,1,'uid');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-05-05 01:57:04','n_diff_pfx02',9,1,'uid,id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-05-05 01:57:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-05-05 01:57:04','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-05-05 01:57:04','n_diff_pfx01',1,1,'userId');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-05-05 01:57:04','n_diff_pfx02',9,1,'userId,id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-05-05 01:57:04','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-05-05 01:57:04','size',1,NULL,'Number of pages in the index');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_shunnedmessages','PRIMARY','2020-05-04 13:23:52','n_diff_pfx01',0,1,'id');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_shunnedmessages','PRIMARY','2020-05-04 13:23:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_shunnedmessages','PRIMARY','2020-05-04 13:23:52','size',1,NULL,'Number of pages in the index');
@@ -3070,33 +3070,33 @@ INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sites','craft_sites
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sites','craft_sites_sortOrder_idx','2020-05-04 13:23:52','n_diff_pfx02',0,1,'sortOrder,id');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sites','craft_sites_sortOrder_idx','2020-05-04 13:23:52','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sites','craft_sites_sortOrder_idx','2020-05-04 13:23:52','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','PRIMARY','2020-05-05 01:46:17','n_diff_pfx01',19,1,'id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','PRIMARY','2020-05-05 01:46:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','PRIMARY','2020-05-05 01:46:17','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_elementId_idx','2020-05-05 01:46:17','n_diff_pfx01',18,1,'elementId');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_elementId_idx','2020-05-05 01:46:17','n_diff_pfx02',19,1,'elementId,id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_elementId_idx','2020-05-05 01:46:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_elementId_idx','2020-05-05 01:46:17','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_level_idx','2020-05-05 01:46:17','n_diff_pfx01',2,1,'level');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_level_idx','2020-05-05 01:46:17','n_diff_pfx02',19,1,'level,id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_level_idx','2020-05-05 01:46:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_level_idx','2020-05-05 01:46:17','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_lft_idx','2020-05-05 01:46:17','n_diff_pfx01',15,1,'lft');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_lft_idx','2020-05-05 01:46:17','n_diff_pfx02',19,1,'lft,id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_lft_idx','2020-05-05 01:46:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_lft_idx','2020-05-05 01:46:17','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_rgt_idx','2020-05-05 01:46:17','n_diff_pfx01',16,1,'rgt');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_rgt_idx','2020-05-05 01:46:17','n_diff_pfx02',19,1,'rgt,id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_rgt_idx','2020-05-05 01:46:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_rgt_idx','2020-05-05 01:46:17','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_root_idx','2020-05-05 01:46:17','n_diff_pfx01',2,1,'root');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_root_idx','2020-05-05 01:46:17','n_diff_pfx02',19,1,'root,id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_root_idx','2020-05-05 01:46:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_root_idx','2020-05-05 01:46:17','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_structureId_elementId_unq_idx','2020-05-05 01:46:17','n_diff_pfx01',2,1,'structureId');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_structureId_elementId_unq_idx','2020-05-05 01:46:17','n_diff_pfx02',19,1,'structureId,elementId');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_structureId_elementId_unq_idx','2020-05-05 01:46:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_structureId_elementId_unq_idx','2020-05-05 01:46:17','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','PRIMARY','2020-05-05 01:51:33','n_diff_pfx01',21,1,'id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','PRIMARY','2020-05-05 01:51:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','PRIMARY','2020-05-05 01:51:33','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_elementId_idx','2020-05-05 01:51:33','n_diff_pfx01',20,1,'elementId');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_elementId_idx','2020-05-05 01:51:33','n_diff_pfx02',21,1,'elementId,id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_elementId_idx','2020-05-05 01:51:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_elementId_idx','2020-05-05 01:51:33','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_level_idx','2020-05-05 01:51:33','n_diff_pfx01',2,1,'level');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_level_idx','2020-05-05 01:51:33','n_diff_pfx02',21,1,'level,id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_level_idx','2020-05-05 01:51:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_level_idx','2020-05-05 01:51:33','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_lft_idx','2020-05-05 01:51:33','n_diff_pfx01',16,1,'lft');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_lft_idx','2020-05-05 01:51:33','n_diff_pfx02',21,1,'lft,id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_lft_idx','2020-05-05 01:51:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_lft_idx','2020-05-05 01:51:33','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_rgt_idx','2020-05-05 01:51:33','n_diff_pfx01',17,1,'rgt');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_rgt_idx','2020-05-05 01:51:33','n_diff_pfx02',21,1,'rgt,id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_rgt_idx','2020-05-05 01:51:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_rgt_idx','2020-05-05 01:51:33','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_root_idx','2020-05-05 01:51:33','n_diff_pfx01',2,1,'root');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_root_idx','2020-05-05 01:51:33','n_diff_pfx02',21,1,'root,id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_root_idx','2020-05-05 01:51:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_root_idx','2020-05-05 01:51:33','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_structureId_elementId_unq_idx','2020-05-05 01:51:33','n_diff_pfx01',2,1,'structureId');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_structureId_elementId_unq_idx','2020-05-05 01:51:33','n_diff_pfx02',21,1,'structureId,elementId');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_structureId_elementId_unq_idx','2020-05-05 01:51:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structureelements','craft_structureelements_structureId_elementId_unq_idx','2020-05-05 01:51:33','size',1,NULL,'Number of pages in the index');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structures','PRIMARY','2020-05-05 01:17:41','n_diff_pfx01',3,1,'id');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structures','PRIMARY','2020-05-05 01:17:41','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_structures','PRIMARY','2020-05-05 01:17:41','size',1,NULL,'Number of pages in the index');
@@ -3371,18 +3371,18 @@ INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_matrixcontent_proje
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_migrations','2020-05-04 13:23:52',168,3,2);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_plugins','2020-05-04 13:23:52',2,1,1);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_projectconfig','2020-05-05 01:45:35',899,12,0);
-INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_queue','2020-05-05 01:46:36',0,1,2);
+INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_queue','2020-05-05 01:51:44',0,1,2);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_relations','2020-05-05 00:02:48',19,1,4);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_resourcepaths','2020-05-04 13:23:53',43,1,0);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_revisions','2020-05-05 00:34:57',51,1,2);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_sections','2020-05-04 13:23:52',0,1,4);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_sections_sites','2020-05-04 13:23:52',0,1,2);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_sequences','2020-05-04 13:23:52',0,1,0);
-INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_sessions','2020-05-05 01:46:27',9,1,4);
+INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_sessions','2020-05-05 01:57:04',9,1,4);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_shunnedmessages','2020-05-04 13:23:52',0,1,1);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_sitegroups','2020-05-04 13:23:52',0,1,1);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_sites','2020-05-04 13:23:52',0,1,4);
-INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_structureelements','2020-05-05 01:46:17',19,1,6);
+INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_structureelements','2020-05-05 01:51:33',21,1,6);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_structures','2020-05-05 01:17:41',3,1,1);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_systemmessages','2020-05-04 13:23:52',0,1,2);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_taggroups','2020-05-04 13:23:52',0,1,4);
@@ -4103,6 +4103,8 @@ INSERT INTO `craft_categories` VALUES (183,1,NULL,NULL,'2020-05-05 01:46:00','20
 INSERT INTO `craft_categories` VALUES (184,1,NULL,NULL,'2020-05-05 01:46:07','2020-05-05 01:46:07','a3fe17da-2cfa-42a7-9709-3257e50f8546');
 INSERT INTO `craft_categories` VALUES (185,1,NULL,NULL,'2020-05-05 01:46:13','2020-05-05 01:46:13','9a678fae-a344-4fdc-8ba0-d3c6ae883bdc');
 INSERT INTO `craft_categories` VALUES (186,2,NULL,NULL,'2020-05-05 01:46:36','2020-05-05 01:46:36','1f2ed662-396e-4bdd-8d5c-f9ffccdbdb6c');
+INSERT INTO `craft_categories` VALUES (187,1,NULL,NULL,'2020-05-05 01:51:33','2020-05-05 01:51:33','44274bcf-46b4-4522-bebd-0919c904c447');
+INSERT INTO `craft_categories` VALUES (188,1,NULL,NULL,'2020-05-05 01:51:42','2020-05-05 01:51:42','dcf01abc-d367-4e38-8c5b-1bbc70aafc83');
 /*!40000 ALTER TABLE `craft_categories` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -4277,7 +4279,7 @@ CREATE TABLE `craft_content` (
   KEY `craft_content_title_idx` (`title`),
   CONSTRAINT `craft_content_elementId_fk` FOREIGN KEY (`elementId`) REFERENCES `craft_elements` (`id`) ON DELETE CASCADE,
   CONSTRAINT `craft_content_siteId_fk` FOREIGN KEY (`siteId`) REFERENCES `craft_sites` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=96 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=98 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4349,7 +4351,7 @@ INSERT INTO `craft_content` VALUES (79,166,1,'Home','2020-05-05 00:02:48','2020-
 INSERT INTO `craft_content` VALUES (80,169,1,'Home','2020-05-05 00:34:58','2020-05-05 00:34:58','8c3e71e8-da4e-4fdd-bd26-df3fff91f963',NULL,NULL,NULL);
 INSERT INTO `craft_content` VALUES (81,172,1,'Ruby','2020-05-05 01:13:17','2020-05-05 01:13:17','8499866c-88fe-4903-89e0-788c459a78c5',NULL,NULL,NULL);
 INSERT INTO `craft_content` VALUES (82,173,1,'Python','2020-05-05 01:13:27','2020-05-05 01:13:27','041b67bd-a79b-4322-be63-1ab07fecff37',NULL,NULL,NULL);
-INSERT INTO `craft_content` VALUES (83,174,1,'Games','2020-05-05 01:13:48','2020-05-05 01:13:48','9d9cfbe8-0354-4d7f-a1ed-96599ace8b6f',NULL,NULL,NULL);
+INSERT INTO `craft_content` VALUES (83,174,1,'Game','2020-05-05 01:13:48','2020-05-05 01:50:22','9d9cfbe8-0354-4d7f-a1ed-96599ace8b6f',NULL,NULL,NULL);
 INSERT INTO `craft_content` VALUES (84,175,1,'AI','2020-05-05 01:13:57','2020-05-05 01:13:57','c38ae3ff-3c1b-4f24-89ea-b174420a583d',NULL,NULL,NULL);
 INSERT INTO `craft_content` VALUES (85,176,1,'Game Reviews','2020-05-05 01:14:48','2020-05-05 01:14:48','a2796323-23f7-43b5-8b42-d9075f945fb6',NULL,NULL,NULL);
 INSERT INTO `craft_content` VALUES (86,177,1,'News','2020-05-05 01:15:04','2020-05-05 01:15:04','522abf6a-31b3-4420-9bf5-5f7de7bed25e',NULL,NULL,NULL);
@@ -4362,6 +4364,8 @@ INSERT INTO `craft_content` VALUES (92,183,1,'Mac','2020-05-05 01:46:00','2020-0
 INSERT INTO `craft_content` VALUES (93,184,1,'Android','2020-05-05 01:46:07','2020-05-05 01:46:07','a833ca34-983e-45e3-93f1-ab0af99891ac',NULL,NULL,NULL);
 INSERT INTO `craft_content` VALUES (94,185,1,'IOS','2020-05-05 01:46:13','2020-05-05 01:46:13','8bbd0f73-cb5a-45c1-afb4-0e8d9519b0f3',NULL,NULL,NULL);
 INSERT INTO `craft_content` VALUES (95,186,1,'General','2020-05-05 01:46:36','2020-05-05 01:46:36','be9e8729-159f-4b5d-80b3-0e0bf721c0d2',NULL,NULL,NULL);
+INSERT INTO `craft_content` VALUES (96,187,1,'Productivity','2020-05-05 01:51:33','2020-05-05 01:51:33','5f55082d-1133-413f-b447-c367ec95dfdc',NULL,NULL,NULL);
+INSERT INTO `craft_content` VALUES (97,188,1,'Other','2020-05-05 01:51:42','2020-05-05 01:51:42','8216d648-b706-428f-8f68-28f7e572c1cc',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `craft_content` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -4520,7 +4524,7 @@ CREATE TABLE `craft_elements` (
   CONSTRAINT `craft_elements_draftId_fk` FOREIGN KEY (`draftId`) REFERENCES `craft_drafts` (`id`) ON DELETE CASCADE,
   CONSTRAINT `craft_elements_fieldLayoutId_fk` FOREIGN KEY (`fieldLayoutId`) REFERENCES `craft_fieldlayouts` (`id`) ON DELETE SET NULL,
   CONSTRAINT `craft_elements_revisionId_fk` FOREIGN KEY (`revisionId`) REFERENCES `craft_revisions` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=187 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=189 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4672,7 +4676,7 @@ INSERT INTO `craft_elements` VALUES (170,NULL,NULL,3,'craft\\elements\\MatrixBlo
 INSERT INTO `craft_elements` VALUES (171,NULL,NULL,5,'craft\\elements\\MatrixBlock',1,0,'2020-05-05 00:34:58','2020-05-05 00:34:57',NULL,'dfc8e0fc-8d88-4686-8dcd-41c219210df4');
 INSERT INTO `craft_elements` VALUES (172,NULL,NULL,NULL,'craft\\elements\\Category',1,0,'2020-05-05 01:13:17','2020-05-05 01:13:17',NULL,'8dcccd11-0123-4e37-bd64-564e4fcd9d8c');
 INSERT INTO `craft_elements` VALUES (173,NULL,NULL,NULL,'craft\\elements\\Category',1,0,'2020-05-05 01:13:27','2020-05-05 01:13:27',NULL,'dcaa3ec8-4891-4f53-94ae-1ca3b8685044');
-INSERT INTO `craft_elements` VALUES (174,NULL,NULL,NULL,'craft\\elements\\Category',1,0,'2020-05-05 01:13:48','2020-05-05 01:13:48',NULL,'554c0cf3-894b-4047-b432-56ad8d33f953');
+INSERT INTO `craft_elements` VALUES (174,NULL,NULL,NULL,'craft\\elements\\Category',1,0,'2020-05-05 01:13:48','2020-05-05 01:50:22',NULL,'554c0cf3-894b-4047-b432-56ad8d33f953');
 INSERT INTO `craft_elements` VALUES (175,NULL,NULL,NULL,'craft\\elements\\Category',1,0,'2020-05-05 01:13:57','2020-05-05 01:13:57',NULL,'88d997c6-d2f7-46d3-90f8-358399a87f7d');
 INSERT INTO `craft_elements` VALUES (176,NULL,NULL,NULL,'craft\\elements\\Category',1,0,'2020-05-05 01:14:48','2020-05-05 01:14:48',NULL,'f64497e6-2746-47e3-8105-9e836cf33f22');
 INSERT INTO `craft_elements` VALUES (177,NULL,NULL,NULL,'craft\\elements\\Category',1,0,'2020-05-05 01:15:04','2020-05-05 01:15:04',NULL,'f3bc277d-c99d-4380-9a77-fd1597a6e0dc');
@@ -4685,6 +4689,8 @@ INSERT INTO `craft_elements` VALUES (183,NULL,NULL,NULL,'craft\\elements\\Catego
 INSERT INTO `craft_elements` VALUES (184,NULL,NULL,NULL,'craft\\elements\\Category',1,0,'2020-05-05 01:46:07','2020-05-05 01:46:07',NULL,'e30cc8df-45f3-4382-bbf6-66424aa786d6');
 INSERT INTO `craft_elements` VALUES (185,NULL,NULL,NULL,'craft\\elements\\Category',1,0,'2020-05-05 01:46:13','2020-05-05 01:46:13',NULL,'8442a8fd-d3d0-42dd-8d8d-066858b5789b');
 INSERT INTO `craft_elements` VALUES (186,NULL,NULL,NULL,'craft\\elements\\Category',1,0,'2020-05-05 01:46:36','2020-05-05 01:46:36',NULL,'19f59559-b4b1-446f-a407-f8ec55f20c1b');
+INSERT INTO `craft_elements` VALUES (187,NULL,NULL,NULL,'craft\\elements\\Category',1,0,'2020-05-05 01:51:33','2020-05-05 01:51:33',NULL,'0e13cdb4-e51a-4d58-adbd-86b150e8c2bd');
+INSERT INTO `craft_elements` VALUES (188,NULL,NULL,NULL,'craft\\elements\\Category',1,0,'2020-05-05 01:51:42','2020-05-05 01:51:42',NULL,'52e6dbe5-423d-412d-b662-2ca97fb69b65');
 /*!40000 ALTER TABLE `craft_elements` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -4713,7 +4719,7 @@ CREATE TABLE `craft_elements_sites` (
   KEY `craft_elements_sites_uri_siteId_idx` (`uri`,`siteId`),
   CONSTRAINT `craft_elements_sites_elementId_fk` FOREIGN KEY (`elementId`) REFERENCES `craft_elements` (`id`) ON DELETE CASCADE,
   CONSTRAINT `craft_elements_sites_siteId_fk` FOREIGN KEY (`siteId`) REFERENCES `craft_sites` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=187 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=189 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4878,6 +4884,8 @@ INSERT INTO `craft_elements_sites` VALUES (183,183,1,'mac','project-tags/mac',1,
 INSERT INTO `craft_elements_sites` VALUES (184,184,1,'android','project-tags/android',1,'2020-05-05 01:46:07','2020-05-05 01:46:08','383f7864-db4b-45cc-8a09-b2cfb288e5fe');
 INSERT INTO `craft_elements_sites` VALUES (185,185,1,'ios','project-tags/ios',1,'2020-05-05 01:46:13','2020-05-05 01:46:14','d38ead0f-1fe2-4a78-b1fa-5cb1650ce081');
 INSERT INTO `craft_elements_sites` VALUES (186,186,1,'general','blog-post-types/general',1,'2020-05-05 01:46:36','2020-05-05 01:46:37','e503a2ff-609e-4ca2-a3df-f92160ffa590');
+INSERT INTO `craft_elements_sites` VALUES (187,187,1,'productivity','project-tags/productivity',1,'2020-05-05 01:51:33','2020-05-05 01:51:34','64fa437b-dfc7-48dc-be3d-ab26333c1c27');
+INSERT INTO `craft_elements_sites` VALUES (188,188,1,'other','project-tags/other',1,'2020-05-05 01:51:42','2020-05-05 01:51:43','4dba0366-f099-4ab3-973a-b95f812769cd');
 /*!40000 ALTER TABLE `craft_elements_sites` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -5942,8 +5950,8 @@ CREATE TABLE `craft_plugins` (
 
 LOCK TABLES `craft_plugins` WRITE;
 /*!40000 ALTER TABLE `craft_plugins` DISABLE KEYS */;
-INSERT INTO `craft_plugins` VALUES (1,'assetrev','6.0.2','1.0.0','unknown',NULL,'2020-04-30 06:11:04','2020-04-30 06:11:04','2020-05-04 23:32:53','3ff5b1b8-bd4a-4975-9ef0-dbb0659aacfb');
-INSERT INTO `craft_plugins` VALUES (2,'redactor','2.6.1','2.3.0','unknown',NULL,'2020-04-30 18:06:01','2020-04-30 18:06:01','2020-05-04 23:32:53','269f69e2-bffa-46d8-abb6-e67fbe764b24');
+INSERT INTO `craft_plugins` VALUES (1,'assetrev','6.0.2','1.0.0','unknown',NULL,'2020-04-30 06:11:04','2020-04-30 06:11:04','2020-05-05 01:57:04','3ff5b1b8-bd4a-4975-9ef0-dbb0659aacfb');
+INSERT INTO `craft_plugins` VALUES (2,'redactor','2.6.1','2.3.0','unknown',NULL,'2020-04-30 18:06:01','2020-04-30 18:06:01','2020-05-05 01:57:04','269f69e2-bffa-46d8-abb6-e67fbe764b24');
 /*!40000 ALTER TABLE `craft_plugins` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -6896,7 +6904,7 @@ CREATE TABLE `craft_queue` (
   PRIMARY KEY (`id`),
   KEY `craft_queue_channel_fail_timeUpdated_timePushed_idx` (`channel`,`fail`,`timeUpdated`,`timePushed`),
   KEY `craft_queue_channel_fail_timeUpdated_delay_idx` (`channel`,`fail`,`timeUpdated`,`delay`)
-) ENGINE=InnoDB AUTO_INCREMENT=248 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=256 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7277,8 +7285,8 @@ INSERT INTO `craft_searchindex` VALUES (172,'slug',0,1,' ruby ');
 INSERT INTO `craft_searchindex` VALUES (172,'title',0,1,' ruby ');
 INSERT INTO `craft_searchindex` VALUES (173,'slug',0,1,' python 1 ');
 INSERT INTO `craft_searchindex` VALUES (173,'title',0,1,' python ');
+INSERT INTO `craft_searchindex` VALUES (174,'title',0,1,' game ');
 INSERT INTO `craft_searchindex` VALUES (174,'slug',0,1,' games ');
-INSERT INTO `craft_searchindex` VALUES (174,'title',0,1,' games ');
 INSERT INTO `craft_searchindex` VALUES (175,'slug',0,1,' ai ');
 INSERT INTO `craft_searchindex` VALUES (175,'title',0,1,' ai ');
 INSERT INTO `craft_searchindex` VALUES (176,'slug',0,1,' game reviews ');
@@ -7303,6 +7311,10 @@ INSERT INTO `craft_searchindex` VALUES (185,'slug',0,1,' ios ');
 INSERT INTO `craft_searchindex` VALUES (185,'title',0,1,' ios ');
 INSERT INTO `craft_searchindex` VALUES (186,'slug',0,1,' general ');
 INSERT INTO `craft_searchindex` VALUES (186,'title',0,1,' general ');
+INSERT INTO `craft_searchindex` VALUES (187,'slug',0,1,' productivity ');
+INSERT INTO `craft_searchindex` VALUES (187,'title',0,1,' productivity ');
+INSERT INTO `craft_searchindex` VALUES (188,'slug',0,1,' other ');
+INSERT INTO `craft_searchindex` VALUES (188,'title',0,1,' other ');
 /*!40000 ALTER TABLE `craft_searchindex` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -7443,7 +7455,7 @@ INSERT INTO `craft_sessions` VALUES (6,1,'3qrPOkBM5Na8_YBaIr_uctbZuepAITWVzYNmyq
 INSERT INTO `craft_sessions` VALUES (7,1,'YcBJ5WcDsrvFGvahKxD1Sq_1swJGB07BsDkAcjIAX3kRCpYQyI2dl1EN0JJk4FypyVjhgVKb5N9_6PhIoxNDRAfnrWBfSpPzqmct','2020-05-02 00:51:14','2020-05-02 00:51:41','2d16d61a-6c9c-4d13-af2c-76cff6754e42');
 INSERT INTO `craft_sessions` VALUES (10,1,'_T5j_5MLC73GnAdR23683ZvCpiwj3DMIX3Wnava6xgK9u0ybAuQsQFxWc6AkOI-WzEmn1gxlaQvJQjESdGkQWEfJM_Wx_iXGz808','2020-05-04 00:30:28','2020-05-04 01:57:53','0d667185-c01d-4cf3-b543-e3e6152e8fa4');
 INSERT INTO `craft_sessions` VALUES (11,1,'yNgSZSJzX32hK7-AoMn5w0ZlmGTXP2w5UTQmQH9txyjx9QEQyEDKWhRoPGz6DVVssQxGOq8YZSqx4U5YuL1Qj3sxoerrIWKoeuiQ','2020-05-04 13:46:08','2020-05-04 13:46:08','c582851d-f1d9-4ed8-95c3-18b8cbb53419');
-INSERT INTO `craft_sessions` VALUES (12,1,'aMok4mBYciVB3YKS4xTJshJcCarQWYWiGxrYOt4nTxLy_FrS_gqumB5cJQQYI50KUKh_P9gfHYRs76xfsP8iz-M_pTjvzmAR6JGO','2020-05-04 23:32:29','2020-05-05 01:46:39','f512ad3f-3ea9-4a2b-a20c-81d4e005f4ef');
+INSERT INTO `craft_sessions` VALUES (12,1,'aMok4mBYciVB3YKS4xTJshJcCarQWYWiGxrYOt4nTxLy_FrS_gqumB5cJQQYI50KUKh_P9gfHYRs76xfsP8iz-M_pTjvzmAR6JGO','2020-05-04 23:32:29','2020-05-05 01:57:05','f512ad3f-3ea9-4a2b-a20c-81d4e005f4ef');
 /*!40000 ALTER TABLE `craft_sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -7573,7 +7585,7 @@ CREATE TABLE `craft_structureelements` (
   KEY `craft_structureelements_elementId_idx` (`elementId`),
   CONSTRAINT `craft_structureelements_elementId_fk` FOREIGN KEY (`elementId`) REFERENCES `craft_elements` (`id`) ON DELETE CASCADE,
   CONSTRAINT `craft_structureelements_structureId_fk` FOREIGN KEY (`structureId`) REFERENCES `craft_structures` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7582,7 +7594,7 @@ CREATE TABLE `craft_structureelements` (
 
 LOCK TABLES `craft_structureelements` WRITE;
 /*!40000 ALTER TABLE `craft_structureelements` DISABLE KEYS */;
-INSERT INTO `craft_structureelements` VALUES (1,1,NULL,1,1,30,0,'2020-05-01 15:34:07','2020-05-05 01:46:13','b8f63776-c9e2-4dd3-99c9-6185382acaa8');
+INSERT INTO `craft_structureelements` VALUES (1,1,NULL,1,1,34,0,'2020-05-01 15:34:07','2020-05-05 01:51:42','b8f63776-c9e2-4dd3-99c9-6185382acaa8');
 INSERT INTO `craft_structureelements` VALUES (2,1,15,1,2,3,1,'2020-05-01 15:34:07','2020-05-01 15:34:07','0e6803fb-f8cf-4f2a-9b32-058ed27a65d4');
 INSERT INTO `craft_structureelements` VALUES (3,1,16,1,4,5,1,'2020-05-01 15:34:20','2020-05-01 15:34:20','f7bae280-ab09-4a37-bab4-1cb6a391c539');
 INSERT INTO `craft_structureelements` VALUES (4,1,17,1,6,7,1,'2020-05-01 15:34:31','2020-05-01 15:34:31','98b7c599-4065-4fbb-8ae2-1ac789df8777');
@@ -7602,6 +7614,8 @@ INSERT INTO `craft_structureelements` VALUES (17,1,183,1,24,25,1,'2020-05-05 01:
 INSERT INTO `craft_structureelements` VALUES (18,1,184,1,26,27,1,'2020-05-05 01:46:07','2020-05-05 01:46:07','b0c7f72c-f9bc-4bdb-86fe-ce46131dc994');
 INSERT INTO `craft_structureelements` VALUES (19,1,185,1,28,29,1,'2020-05-05 01:46:13','2020-05-05 01:46:13','cb6ed1dc-5cb7-4f0d-a494-dab561c18875');
 INSERT INTO `craft_structureelements` VALUES (20,2,186,9,8,9,1,'2020-05-05 01:46:36','2020-05-05 01:46:36','2d5a03b6-d4ce-4533-be32-c4051ed96297');
+INSERT INTO `craft_structureelements` VALUES (21,1,187,1,30,31,1,'2020-05-05 01:51:33','2020-05-05 01:51:33','a87c70dc-eba7-4d00-a913-0e916dc42573');
+INSERT INTO `craft_structureelements` VALUES (22,1,188,1,32,33,1,'2020-05-05 01:51:42','2020-05-05 01:51:42','cac91d41-76a8-4208-a69c-4d800248863e');
 /*!40000 ALTER TABLE `craft_structureelements` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -8207,4 +8221,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-05  1:46:47
+-- Dump completed on 2020-05-05  1:57:14
