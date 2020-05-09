@@ -1,14 +1,32 @@
-dateApplied: '2020-05-04 20:12:02'
+dateApplied: '2020-05-09 16:15:06'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-        from: 1588643135
-        to: 1588648322
+        from: 1589066070
+        to: 1589066106
   -
     added:
-      plugins.seo.edition: standard
-      plugins.seo.enabled: true
-      plugins.seo.schemaVersion: 3.1.0
-    message: 'Install plugin “seo”'
+      sections.df2fe2aa-102f-4ede-99cc-9aadd29bb32b.entryTypes.d78a499c-6a59-40af-b684-5e121dce6be1.fieldLayouts.bd433c48-bf3d-4dd3-bcfb-c205321ea45c.tabs.0.fields.23140083-18b3-4a7c-a3d0-8a6ff58cfaad.required: false
+      sections.df2fe2aa-102f-4ede-99cc-9aadd29bb32b.entryTypes.d78a499c-6a59-40af-b684-5e121dce6be1.fieldLayouts.bd433c48-bf3d-4dd3-bcfb-c205321ea45c.tabs.0.fields.23140083-18b3-4a7c-a3d0-8a6ff58cfaad.sortOrder: 3
+      sections.df2fe2aa-102f-4ede-99cc-9aadd29bb32b.entryTypes.d78a499c-6a59-40af-b684-5e121dce6be1.fieldLayouts.bd433c48-bf3d-4dd3-bcfb-c205321ea45c.tabs.0.fields.f4f7842a-b76d-4e27-af2e-7b62672a5735.required: false
+      sections.df2fe2aa-102f-4ede-99cc-9aadd29bb32b.entryTypes.d78a499c-6a59-40af-b684-5e121dce6be1.fieldLayouts.bd433c48-bf3d-4dd3-bcfb-c205321ea45c.tabs.0.fields.f4f7842a-b76d-4e27-af2e-7b62672a5735.sortOrder: 2
+    changed:
+      sections.df2fe2aa-102f-4ede-99cc-9aadd29bb32b.entryTypes.d78a499c-6a59-40af-b684-5e121dce6be1.titleFormat:
+        from: null
+        to: ''
+      sections.df2fe2aa-102f-4ede-99cc-9aadd29bb32b.siteSettings.31a71437-b85c-4bac-aa28-244f320824a5.template:
+        from: null
+        to: ''
+  -
+    added:
+      sections.df2fe2aa-102f-4ede-99cc-9aadd29bb32b.entryTypes.d78a499c-6a59-40af-b684-5e121dce6be1.fieldLayouts.bd433c48-bf3d-4dd3-bcfb-c205321ea45c.tabs.0.fields.23140083-18b3-4a7c-a3d0-8a6ff58cfaad.required: false
+      sections.df2fe2aa-102f-4ede-99cc-9aadd29bb32b.entryTypes.d78a499c-6a59-40af-b684-5e121dce6be1.fieldLayouts.bd433c48-bf3d-4dd3-bcfb-c205321ea45c.tabs.0.fields.23140083-18b3-4a7c-a3d0-8a6ff58cfaad.sortOrder: 3
+      sections.df2fe2aa-102f-4ede-99cc-9aadd29bb32b.entryTypes.d78a499c-6a59-40af-b684-5e121dce6be1.fieldLayouts.bd433c48-bf3d-4dd3-bcfb-c205321ea45c.tabs.0.fields.f4f7842a-b76d-4e27-af2e-7b62672a5735.required: false
+      sections.df2fe2aa-102f-4ede-99cc-9aadd29bb32b.entryTypes.d78a499c-6a59-40af-b684-5e121dce6be1.fieldLayouts.bd433c48-bf3d-4dd3-bcfb-c205321ea45c.tabs.0.fields.f4f7842a-b76d-4e27-af2e-7b62672a5735.sortOrder: 2
+    message: 'Save entry type “project”'
+    changed:
+      sections.df2fe2aa-102f-4ede-99cc-9aadd29bb32b.entryTypes.d78a499c-6a59-40af-b684-5e121dce6be1.titleFormat:
+        from: null
+        to: ''
