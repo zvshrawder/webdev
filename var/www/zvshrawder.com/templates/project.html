@@ -1,0 +1,47 @@
+{#
+# This is the homepage template!
+#}
+
+{% extends "_layout" %}
+{% set title = entry.heading %}
+
+{% block content %}
+
+{%set projectDescriptiveFields = entry.projectDescriptiveFields.one()%}
+
+<header>
+
+</header>
+
+<main role="main" class="container">
+
+
+
+    <div class="container">
+        <h1 class="text-center">{{ entry.title }}</h1>
+        {{entry.heading}}
+        {{ entry.body }}
+        <div class="row">
+            <div class="col-md-6 col-sm-12 descriptiveImage">
+                <img class="img-fluid" src="{{projectDescriptiveFields.descriptiveImage.one().url}}">
+            </div>
+            <div class="col-md-6 col-sm-12 descriptiveText">
+               <div class="row">
+                   <div class="col-12">
+                       {{projectDescriptiveFields.shortDescription}}
+                   </div>
+                   <div class="col-12">
+                       {{projectDescriptiveFields.explanation}}
+                   </div>
+                   <div class="col-12">
+                       {{projectDescriptiveFields.projectStatus}}
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    {%include 'components'%}
+
+
+</main>
+{% endblock %}
