@@ -8,6 +8,12 @@
 {% block content %}
 
 {%set projectDescriptiveFields = entry.projectDescriptiveFields.one()%}
+{%set progressText = "Not Started"%}
+{%set progressClasses = "notStarted"%}
+
+
+
+
 
 <header>
 
@@ -33,8 +39,8 @@
                    <div class="col-12">
                        {{projectDescriptiveFields.explanation}}
                    </div>
-                   <div class="col-12">
-                       {{projectDescriptiveFields.projectStatus}}
+                   <div class="progressIcon notStarted col-12">
+                       <i class=" far fa-square"></i>
                    </div>
                </div>
             </div>

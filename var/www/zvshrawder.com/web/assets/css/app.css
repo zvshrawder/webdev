@@ -103,5 +103,18 @@ h4
     margin-bottom: auto;
 }
 
+.progressIcon
+{
+    font-size: 5rem;
+}
 
+.progressIcon .notStarted
+{
+    color: black;
+
+}
+.progressIcon .notStarted >fa-square
+{
+
+}
 

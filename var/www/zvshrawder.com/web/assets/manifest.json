@@ -4,14 +4,18 @@
   "js/jquery.js":"/js/jquery-3.5.0.min.js",
   "js/bootstrap.js":"/js/bootstrap/bootstrap.min.js",
   "js/app.js":"/js/app.js",
+  "js/fontawesome/all.js":"js/fontawesome/all.min.js",
 
   "css/bootstrap/bootstrap.css":"/css/bootstrap/bootstrap.min.css",
-   "css/app.css":"/css/app.css",
+  "css/app.css":"/css/app.css",
+  "css/fontawesome/all.css":"css/fontawesome/all.min.css",
 
 
   "images/logo.png":"/images/logo.png",
   "images/larger_logo.png":"images/larger_logo.png",
-
+  "images/Progress_Outline_Completed.png":"/images/Progress Outline Completed.png",
+  "images/Progress_Outline_In_Progress.png":"/images/Progress Outline In Progress.png",
+  "images/Progress_Outline_Not_Started.png":"/images/Progress Outline Not Started.png",
 
 
 
