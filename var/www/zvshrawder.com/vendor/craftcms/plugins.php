@@ -57,4 +57,24 @@ return array (
     'developerUrl' => 'https://ethercreative.co.uk',
     'documentationUrl' => 'https://github.com/ethercreative/seo/blob/v3/README.md',
   ),
+  'dolphiq/craft3-forms' => 
+  array (
+    'class' => 'plugins\\dolphiq\\form\\Plugin',
+    'basePath' => $vendorDir . '/dolphiq/craft3-forms/src',
+    'handle' => 'dolphiq-craft3-forms',
+    'aliases' => 
+    array (
+      '@plugins/dolphiq/form' => $vendorDir . '/dolphiq/craft3-forms/src',
+    ),
+    'name' => 'Forms',
+    'version' => '1.1.1',
+    'schemaVersion' => '1.0.0',
+    'description' => 'Craft form plugin that will let you use forms as you would when using the Yii 2 Framework',
+    'developer' => 'Dolphiq',
+    'developerUrl' => 'https://dolphiq.nl/',
+    'documentationUrl' => 'https://github.com/Dolphiq/craft3-forms/blob/master/README.md',
+    'changelogUrl' => 'https://raw.githubusercontent.com/Dolphiq/craft3-forms/master/CHANGELOG.md',
+    'hasCpSettings' => true,
+    'hasCpSection' => false,
+  ),
 );

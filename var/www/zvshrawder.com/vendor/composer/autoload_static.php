@@ -62,6 +62,7 @@ class ComposerStaticInit4efd504ffd649f07a07e8b8b82d6dea8
         ),
         'p' => 
         array (
+            'plugins\\dolphiq\\form\\' => 21,
             'phpDocumentor\\Reflection\\' => 25,
         ),
         'm' => 
@@ -275,6 +276,10 @@ class ComposerStaticInit4efd504ffd649f07a07e8b8b82d6dea8
         'tubalmartin\\CssMin\\' => 
         array (
             0 => __DIR__ . '/..' . '/tubalmartin/cssmin/src',
+        ),
+        'plugins\\dolphiq\\form\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dolphiq/craft3-forms/src',
         ),
         'phpDocumentor\\Reflection\\' => 
         array (
@@ -4125,6 +4130,15 @@ class ComposerStaticInit4efd504ffd649f07a07e8b8b82d6dea8
         'phpDocumentor\\Reflection\\Types\\String_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/String_.php',
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
+        'plugins\\dolphiq\\form\\Plugin' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/Plugin.php',
+        'plugins\\dolphiq\\form\\assets\\pjaxAsset' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/assets/pjaxAsset.php',
+        'plugins\\dolphiq\\form\\controllers\\MainController' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/controllers/MainController.php',
+        'plugins\\dolphiq\\form\\migrations\\Install' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/migrations/Install.php',
+        'plugins\\dolphiq\\form\\models\\Form' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/models/Form.php',
+        'plugins\\dolphiq\\form\\models\\FormSettings' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/models/FormSettings.php',
+        'plugins\\dolphiq\\form\\models\\Settings' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/models/Settings.php',
+        'plugins\\dolphiq\\form\\models\\log' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/models/Log.php',
+        'plugins\\dolphiq\\form\\twigextensions\\YiiTwigExtension' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/twigextensions/YiiTwigExtension.php',
         'tubalmartin\\CssMin\\Colors' => __DIR__ . '/..' . '/tubalmartin/cssmin/src/Colors.php',
         'tubalmartin\\CssMin\\Command' => __DIR__ . '/..' . '/tubalmartin/cssmin/src/Command.php',
         'tubalmartin\\CssMin\\Minifier' => __DIR__ . '/..' . '/tubalmartin/cssmin/src/Minifier.php',
