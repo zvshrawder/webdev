@@ -50,6 +50,10 @@ class ComposerStaticInit4efd504ffd649f07a07e8b8b82d6dea8
             'yii\\' => 4,
             'yii2tech\\ar\\softdelete\\' => 23,
         ),
+        'w' => 
+        array (
+            'wheelform\\' => 10,
+        ),
         'v' => 
         array (
             'voku\\tests\\' => 11,
@@ -62,7 +66,6 @@ class ComposerStaticInit4efd504ffd649f07a07e8b8b82d6dea8
         ),
         'p' => 
         array (
-            'plugins\\dolphiq\\form\\' => 21,
             'phpDocumentor\\Reflection\\' => 25,
         ),
         'm' => 
@@ -256,6 +259,10 @@ class ComposerStaticInit4efd504ffd649f07a07e8b8b82d6dea8
         array (
             0 => __DIR__ . '/..' . '/yii2tech/ar-softdelete/src',
         ),
+        'wheelform\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src',
+        ),
         'voku\\tests\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/tests',
@@ -276,10 +283,6 @@ class ComposerStaticInit4efd504ffd649f07a07e8b8b82d6dea8
         'tubalmartin\\CssMin\\' => 
         array (
             0 => __DIR__ . '/..' . '/tubalmartin/cssmin/src',
-        ),
-        'plugins\\dolphiq\\form\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/dolphiq/craft3-forms/src',
         ),
         'phpDocumentor\\Reflection\\' => 
         array (
@@ -4130,15 +4133,6 @@ class ComposerStaticInit4efd504ffd649f07a07e8b8b82d6dea8
         'phpDocumentor\\Reflection\\Types\\String_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/String_.php',
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
-        'plugins\\dolphiq\\form\\Plugin' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/Plugin.php',
-        'plugins\\dolphiq\\form\\assets\\pjaxAsset' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/assets/pjaxAsset.php',
-        'plugins\\dolphiq\\form\\controllers\\MainController' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/controllers/MainController.php',
-        'plugins\\dolphiq\\form\\migrations\\Install' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/migrations/Install.php',
-        'plugins\\dolphiq\\form\\models\\Form' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/models/Form.php',
-        'plugins\\dolphiq\\form\\models\\FormSettings' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/models/FormSettings.php',
-        'plugins\\dolphiq\\form\\models\\Settings' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/models/Settings.php',
-        'plugins\\dolphiq\\form\\models\\log' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/models/Log.php',
-        'plugins\\dolphiq\\form\\twigextensions\\YiiTwigExtension' => __DIR__ . '/..' . '/dolphiq/craft3-forms/src/twigextensions/YiiTwigExtension.php',
         'tubalmartin\\CssMin\\Colors' => __DIR__ . '/..' . '/tubalmartin/cssmin/src/Colors.php',
         'tubalmartin\\CssMin\\Command' => __DIR__ . '/..' . '/tubalmartin/cssmin/src/Command.php',
         'tubalmartin\\CssMin\\Minifier' => __DIR__ . '/..' . '/tubalmartin/cssmin/src/Minifier.php',
@@ -4151,6 +4145,62 @@ class ComposerStaticInit4efd504ffd649f07a07e8b8b82d6dea8
         'voku\\helper\\StopWordsLanguageNotExists' => __DIR__ . '/..' . '/voku/stop-words/src/voku/helper/StopWordsLanguageNotExists.php',
         'voku\\helper\\URLify' => __DIR__ . '/..' . '/voku/urlify/src/voku/helper/URLify.php',
         'voku\\helper\\UTF8' => __DIR__ . '/..' . '/voku/portable-utf8/src/voku/helper/UTF8.php',
+        'wheelform\\Mailer' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/Mailer.php',
+        'wheelform\\Plugin' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/Plugin.php',
+        'wheelform\\assets\\ListFieldAsset' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/assets/ListFieldAsset.php',
+        'wheelform\\assets\\ToolsAsset' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/assets/ToolsAsset.php',
+        'wheelform\\assets\\WheelformCpAsset' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/assets/WheelformCpAsset.php',
+        'wheelform\\behaviors\\FormFieldBehavior' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/behaviors/FormFieldBehavior.php',
+        'wheelform\\behaviors\\JsonFieldBehavior' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/behaviors/JsonFieldBehavior.php',
+        'wheelform\\console\\controllers\\MessageController' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/console/controllers/MessageController.php',
+        'wheelform\\controllers\\BaseController' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/controllers/BaseController.php',
+        'wheelform\\controllers\\EntriesController' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/controllers/EntriesController.php',
+        'wheelform\\controllers\\FormController' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/controllers/FormController.php',
+        'wheelform\\controllers\\MessageController' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/controllers/MessageController.php',
+        'wheelform\\db\\BaseActiveRecord' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/db/BaseActiveRecord.php',
+        'wheelform\\db\\Form' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/db/Form.php',
+        'wheelform\\db\\FormField' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/db/FormField.php',
+        'wheelform\\db\\Message' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/db/Message.php',
+        'wheelform\\db\\MessageValue' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/db/MessageValue.php',
+        'wheelform\\events\\MessageEvent' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/events/MessageEvent.php',
+        'wheelform\\events\\RegisterFieldsEvent' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/events/RegisterFieldsEvent.php',
+        'wheelform\\events\\SendEvent' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/events/SendEvent.php',
+        'wheelform\\extensions\\WheelformVariable' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/extensions/WheelformVariable.php',
+        'wheelform\\fields\\FormField' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/fields/FormField.php',
+        'wheelform\\helpers\\ExportHelper' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/helpers/ExportHelper.php',
+        'wheelform\\migrations\\Install' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/migrations/Install.php',
+        'wheelform\\migrations\\m180407_040301_add_index_view_column_to_form_fields_table' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/migrations/m180407_040301_add_index_view_column_to_form_fields_table.php',
+        'wheelform\\migrations\\m180407_170219_add_active_column_to_form_fields' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/migrations/m180407_170219_add_active_column_to_form_fields.php',
+        'wheelform\\migrations\\m180430_232743_add_read_column_to_message' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/migrations/m180430_232743_add_read_column_to_message.php',
+        'wheelform\\migrations\\m180602_051517_AddOrderToField' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/migrations/m180602_051517_AddOrderToField.php',
+        'wheelform\\migrations\\m180802_015031_save_entry_to_forms_table' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/migrations/m180802_015031_save_entry_to_forms_table.php',
+        'wheelform\\migrations\\m180804_230709_add_options_to_form_fields' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/migrations/m180804_230709_add_options_to_form_fields.php',
+        'wheelform\\migrations\\m180814_230614_add_options_column_forms_table' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/migrations/m180814_230614_add_options_column_forms_table.php',
+        'wheelform\\models\\Settings' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/models/Settings.php',
+        'wheelform\\models\\fields\\BaseFieldType' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/models/fields/BaseFieldType.php',
+        'wheelform\\models\\fields\\Checkbox' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/models/fields/Checkbox.php',
+        'wheelform\\models\\fields\\Email' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/models/fields/Email.php',
+        'wheelform\\models\\fields\\File' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/models/fields/File.php',
+        'wheelform\\models\\fields\\Hidden' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/models/fields/Hidden.php',
+        'wheelform\\models\\fields\\HtmlField' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/models/fields/HtmlField.php',
+        'wheelform\\models\\fields\\ListField' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/models/fields/ListField.php',
+        'wheelform\\models\\fields\\Number' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/models/fields/Number.php',
+        'wheelform\\models\\fields\\Radio' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/models/fields/Radio.php',
+        'wheelform\\models\\fields\\Select' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/models/fields/Select.php',
+        'wheelform\\models\\fields\\Text' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/models/fields/Text.php',
+        'wheelform\\models\\fields\\Textarea' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/models/fields/Textarea.php',
+        'wheelform\\models\\helpers\\JsonField' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/models/helpers/JsonField.php',
+        'wheelform\\models\\tools\\ImportFile' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/models/tools/ImportFile.php',
+        'wheelform\\services\\BaseService' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/services/BaseService.php',
+        'wheelform\\services\\FieldService' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/services/FieldService.php',
+        'wheelform\\services\\FormService' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/services/FormService.php',
+        'wheelform\\services\\MessageService' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/services/MessageService.php',
+        'wheelform\\services\\RecaptchaV3Service' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/services/RecaptchaV3Service.php',
+        'wheelform\\services\\WheelformService' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/services/WheelformService.php',
+        'wheelform\\services\\permissions\\WheelformPermissions' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/services/permissions/WheelformPermissions.php',
+        'wheelform\\utilities\\Tools' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/utilities/Tools.php',
+        'wheelform\\validators\\JsonValidator' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/validators/JsonValidator.php',
+        'wheelform\\widgets\\LinkPager' => __DIR__ . '/..' . '/xpertbot/craft-wheelform/src/widgets/LinkPager.php',
         'yii2tech\\ar\\softdelete\\SoftDeleteBehavior' => __DIR__ . '/..' . '/yii2tech/ar-softdelete/src/SoftDeleteBehavior.php',
         'yii2tech\\ar\\softdelete\\SoftDeleteQueryBehavior' => __DIR__ . '/..' . '/yii2tech/ar-softdelete/src/SoftDeleteQueryBehavior.php',
         'yii\\BaseYii' => __DIR__ . '/..' . '/yiisoft/yii2/BaseYii.php',

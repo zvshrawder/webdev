@@ -726,63 +726,6 @@
         ]
     },
     {
-        "name": "dolphiq/craft3-forms",
-        "version": "1.1.1",
-        "version_normalized": "1.1.1.0",
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Dolphiq/craft3-forms/zipball/ac6ec3a63d078902ffd97284fcafe36b976cd139",
-            "reference": "ac6ec3a63d078902ffd97284fcafe36b976cd139",
-            "shasum": ""
-        },
-        "require": {
-            "craftcms/cms": "^3.1.0"
-        },
-        "time": "2019-10-03T09:02:11+00:00",
-        "type": "craft-plugin",
-        "extra": {
-            "handle": "dolphiq-craft3-forms",
-            "name": "Forms",
-            "description": "Craft form plugin that will let you use forms as you would when using the Yii 2 Framework",
-            "schemaVersion": "1.0.0",
-            "developer": "Dolphiq",
-            "developerUrl": "https://dolphiq.nl/",
-            "hasCpSettings": true,
-            "hasCpSection": false,
-            "documentationUrl": "https://github.com/Dolphiq/craft3-forms/blob/master/README.md",
-            "changelogUrl": "https://raw.githubusercontent.com/Dolphiq/craft3-forms/master/CHANGELOG.md"
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "plugins\\dolphiq\\form\\": "src/"
-            }
-        },
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Dolphiq",
-                "email": "info@dolphiq.nl",
-                "homepage": "https://dolphiq.nl/"
-            }
-        ],
-        "description": "Craft 3 formulieren",
-        "keywords": [
-            "cms",
-            "craft",
-            "craft-plugin",
-            "craft3",
-            "craftcms",
-            "form",
-            "forms",
-            "plugin",
-            "yii",
-            "yii2"
-        ]
-    },
-    {
         "name": "egulias/email-validator",
         "version": "2.1.17",
         "version_normalized": "2.1.17.0",
@@ -4422,6 +4365,59 @@
             "api",
             "graphql"
         ]
+    },
+    {
+        "name": "xpertbot/craft-wheelform",
+        "version": "2.4.2",
+        "version_normalized": "2.4.2.0",
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/xpertbot/craft-wheelform/zipball/a64461a14d55197cb1c2a4176eab77c9ad1552c8",
+            "reference": "a64461a14d55197cb1c2a4176eab77c9ad1552c8",
+            "shasum": ""
+        },
+        "require": {
+            "craftcms/cms": "^3.0.0-RC1"
+        },
+        "time": "2020-03-01T03:42:10+00:00",
+        "type": "craft-plugin",
+        "extra": {
+            "name": "Wheel Form",
+            "handle": "wheelform",
+            "hasCpSettings": true,
+            "hasCpSection": true,
+            "changelogUrl": "https://github.com/xpertbot/craft-wheelform/CHANGELOG.md",
+            "components": {
+                "mailer": "Wheelform\\Mailer"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "wheelform\\": "src/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Wheel Interactive",
+                "homepage": "https://wheelinteractive.com"
+            }
+        ],
+        "description": "Craft CMS 3 Form administrator with Database integration",
+        "keywords": [
+            "Wheel Form",
+            "cms",
+            "craft",
+            "craft-plugin",
+            "craftcms"
+        ],
+        "support": {
+            "docs": "https://github.com/xpertbot/craft-wheelform/blob/master/README.md",
+            "issues": "https://github.com/xpertbot/craft-wheelform/issues"
+        }
     },
     {
         "name": "yii2tech/ar-softdelete",

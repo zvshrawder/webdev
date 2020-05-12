@@ -57,24 +57,27 @@ return array (
     'developerUrl' => 'https://ethercreative.co.uk',
     'documentationUrl' => 'https://github.com/ethercreative/seo/blob/v3/README.md',
   ),
-  'dolphiq/craft3-forms' => 
+  'xpertbot/craft-wheelform' => 
   array (
-    'class' => 'plugins\\dolphiq\\form\\Plugin',
-    'basePath' => $vendorDir . '/dolphiq/craft3-forms/src',
-    'handle' => 'dolphiq-craft3-forms',
+    'class' => 'wheelform\\Plugin',
+    'basePath' => $vendorDir . '/xpertbot/craft-wheelform/src',
+    'handle' => 'wheelform',
     'aliases' => 
     array (
-      '@plugins/dolphiq/form' => $vendorDir . '/dolphiq/craft3-forms/src',
+      '@wheelform' => $vendorDir . '/xpertbot/craft-wheelform/src',
     ),
-    'name' => 'Forms',
-    'version' => '1.1.1',
-    'schemaVersion' => '1.0.0',
-    'description' => 'Craft form plugin that will let you use forms as you would when using the Yii 2 Framework',
-    'developer' => 'Dolphiq',
-    'developerUrl' => 'https://dolphiq.nl/',
-    'documentationUrl' => 'https://github.com/Dolphiq/craft3-forms/blob/master/README.md',
-    'changelogUrl' => 'https://raw.githubusercontent.com/Dolphiq/craft3-forms/master/CHANGELOG.md',
+    'name' => 'Wheel Form',
+    'version' => '2.4.2',
+    'description' => 'Craft CMS 3 Form administrator with Database integration',
+    'developer' => 'Wheel Interactive',
+    'developerUrl' => 'https://wheelinteractive.com',
+    'documentationUrl' => 'https://github.com/xpertbot/craft-wheelform/blob/master/README.md',
+    'changelogUrl' => 'https://github.com/xpertbot/craft-wheelform/CHANGELOG.md',
     'hasCpSettings' => true,
-    'hasCpSection' => false,
+    'hasCpSection' => true,
+    'components' => 
+    array (
+      'mailer' => 'Wheelform\\Mailer',
+    ),
   ),
 );
