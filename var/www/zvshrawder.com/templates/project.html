@@ -8,8 +8,16 @@
 {% block content %}
 
 {%set projectDescriptiveFields = entry.projectDescriptiveFields.one()%}
+{%set projectCategories = entry.projectCategories.all()%}
 {%set progressText = "Not Started"%}
 {%set progressClasses = "notStarted"%}
+{%if projectDescriptiveFields.projectStatus == "inProgress"%}
+    {%set progressText = "In Progress"%}
+    {%set progressClasses = "inProgress"%}
+    {%elseif projectDescriptiveFields.projectStatus == "completed"%}
+        {%set progressText = "Completed"%}
+        {%set progressClasses = "completed"%}
+{%endif%}
 
 
 
@@ -39,12 +47,27 @@
                    <div class="col-12">
                        {{projectDescriptiveFields.explanation}}
                    </div>
-                   <div class="progressIcon notStarted col-12">
+                   <div class="progressIcon {{progressClasses}} col-12">
+                       <i class=" far fa-square"></i>
+
+                       <span class="badge badge-info"> {{progressText}}</span>
                        <i class=" far fa-square"></i>
                    </div>
                </div>
             </div>
         </div>
+        <!--cattegories (will eventually link to a search page and prepopulate with the selected category)-->
+        {%if projectCategories is not empty%}
+        <div class="row projectCategoriesRow ">
+            {%for category in projectCategories%}
+            <div class="col-lg-2 col-md-4  projectCategoriesCol">
+                <a class="badge badge-info projectCategoriesIcon" href="">{{category.title}} </a>
+            </div>
+            {%endfor%}
+
+
+        </div>
+        {%endif%}
     </div>
     {%include 'components'%}
 

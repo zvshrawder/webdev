@@ -105,16 +105,53 @@ h4
 
 .progressIcon
 {
-    font-size: 5rem;
+    text-align: center;
 }
 
 .progressIcon .notStarted
 {
-    color: black;
+    color: red;
 
 }
-.progressIcon .notStarted >fa-square
+.inProgress{}
+.notStarted >.fa-square
 {
+    color:red;
+}
+.notStarted > .badge-info
+{
+    background-color:red;
+}
+.inProgress >.fa-square
+{
+    color:darkorange;
+}
+.inProgress > .badge-info
+{
+    background-color:darkorange;
+}
+.completed >.fa-square
+{
+    color:green;
+}
+.completed > .badge-info
+{
+    background-color:green;
+}
 
+.projectCategoriesRow
+{
+    text-align:center;
+}
+
+.projectCategoriesCol
+{
+    align-content: center;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+.projectCategoriesIcon
+{
+    background-color: grey;
 }
 
