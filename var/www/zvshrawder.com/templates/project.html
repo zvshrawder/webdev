@@ -19,6 +19,7 @@
         {%set progressClasses = "completed"%}
 {%endif%}
 
+{%set downloads =entry.projectDownloads.all()%}
 
 
 
@@ -67,6 +68,24 @@
 
 
         </div>
+        {%endif%}
+
+        {%if downloads is not empty%}
+            <div class="downloadsRow">
+                {%for download in downloads%}
+                    <div class="col-6 downloadsCol">
+                        <div class = "downloadTitle">
+                            {{download.downloadTitle}}
+                        </div>
+                        <div class = "downloadDescription">
+                            {{download.downloadDescription}}
+                        </div>
+                        <div class = "downloadDownload">
+                            <a href="{{download.download.first().url}}"><i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                {%endfor%}
+            </div>
         {%endif%}
     </div>
     {%include 'components'%}
