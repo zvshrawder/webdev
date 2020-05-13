@@ -1,14 +1,20 @@
-dateApplied: '2020-05-12 14:10:30'
+dateApplied: '2020-05-13 09:09:31'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-        from: 1589316691
-        to: 1589317830
+        from: 1589383705
+        to: 1589386171
   -
-    added:
-      plugins.wheelform.edition: standard
-      plugins.wheelform.enabled: true
-      plugins.wheelform.schemaVersion: 2.0.0
-    message: 'Install plugin “wheelform”'
+    message: 'Change settings for plugin “express-forms”'
+    changed:
+      plugins.express-forms.settings.honeypotEnabled:
+        from: 1
+        to: '1'
+      plugins.express-forms.settings.recaptchaEnabled:
+        from: 1
+        to: ''
+      plugins.express-forms.settings.recaptchaLoadScript:
+        from: 1
+        to: '1'

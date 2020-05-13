@@ -12,6 +12,19 @@
 </header>
 
 <main role="main" class="container">
+    {# Macro for Field Errors #}
+    {% macro renderErrors(field) %}
+        {% if field.hasErrors and field.errors|length %}
+            <ul class="errors">
+                {% for error in field.errors %}
+                    <li>{{ error|t }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endmacro %}
+    {% import _self as forms %}
+
+
 
     <h1>{{ title }}</h1>
     {{entry.heading}}
@@ -33,9 +46,36 @@
             <div class="form-group">
                 <label for="{{ field.handle }}"{{ field.isRequired ? ' class="required"' }}>{{ field.label }}</label><br>
                 <textarea class="form-control" id="{{ field.handle }}" type="{{ field.type }}" name="{{ field.handle }}" value="{{ field.value }}" rows="5"></textarea>
+                {% if field.errors %}
+
+                    {% for error in field.errors %}
+
+                        <div class="alert alert-danger" role="alert">
+                            {{ error|t }}
+                        </div>
+                    {% endfor %}
+
+                {% endif %}
             </div>
         {% elseif field.type == "file" %}
         {# File field formatting contents #}
+        {#Options box#}
+        {% elseif field.type == "options" %}
+            <div class="form-group">
+                <label for="{{ field.handle }}">Reason for contact</label>
+                <select class="form-control"  id="{{ field.handle }}" name="{{ field.handle }}" value="{{ field.value }}">
+                    <option value="Consult on a website">Consult on a website</option>
+                    <option value="Programming question">Programming question</option>
+                    <option value="Other">Other</option>
+                </select>
+                {% for error in field.errors %}
+
+                        <div class="alert alert-danger" role="alert">
+                {{ error|t }}
+            </div>
+        {% endfor %}
+            </div>
+
         {% else %}
         {# Check on a Field Handle for Exception to formatting #}
         {% if field.handle == "email" %}
@@ -43,18 +83,31 @@
             <div class="form-group">
                 <label for="{{ field.handle }}">Email address</label><br>
                 <input type="email" id="{{ field.handle }}" name="{{ field.handle }}" value="{{ field.value }}" placeholder="Enter email">
+                {% if field.errors %}
+
+                    {% for error in field.errors %}
+
+                        <div class="alert alert-danger" role="alert">
+                            {{ error|t }}
+                        </div>
+                    {% endfor %}
+
+                {% endif %}
             </div>
         {% else %}
         {# All other fields formatting - EXAMPLE #}
-        <div>
+        <div class="form-group">
             <label for="{{ field.handle }}"{{ field.isRequired ? ' class="required"' }}>{{ field.label }}</label><br>
             <input id="{{ field.handle }}" type="{{ field.type }}" name="{{ field.handle }}" value="{{ field.value }}">
             {% if field.errors %}
-            <ul class="errors">
+
                 {% for error in field.errors %}
-                <li>{{ error|t }}</li>
+
+                    <div class="alert alert-danger" role="alert">
+                        {{ error|t }}
+                    </div>
                 {% endfor %}
-            </ul>
+
             {% endif %}
         </div>
         {% endif %}
@@ -64,7 +117,16 @@
         <br>
         <input type="submit" value="Submit">
     </div>
+
+    {{ form.recaptcha.render }}
     {{ form.closeTag }}
+
+
+
+
+
+
+
 
 
 </main>

@@ -1,18 +1,20 @@
-dateApplied: '2020-05-12 14:20:39'
+dateApplied: '2020-05-13 09:09:49'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-        from: 1589317830
-        to: 1589318439
+        from: 1589386171
+        to: 1589386189
   -
-    removed:
-      plugins.dolphiq-craft3-forms.edition: standard
-      plugins.dolphiq-craft3-forms.enabled: true
-      plugins.dolphiq-craft3-forms.schemaVersion: 1.0.0
-      plugins.dolphiq-craft3-forms.settings.append_form_part: Form.php
-      plugins.dolphiq-craft3-forms.settings.form_namespace: app\forms\
-      plugins.dolphiq-craft3-forms.settings.form_path: '@root/forms/'
-      plugins.dolphiq-craft3-forms.settings.form_thanks_view: thanks.php
-    message: 'Uninstall the “dolphiq-craft3-forms” plugin'
+    message: 'Change settings for plugin “express-forms”'
+    changed:
+      plugins.express-forms.settings.honeypotEnabled:
+        from: 1
+        to: '1'
+      plugins.express-forms.settings.recaptchaEnabled:
+        from: null
+        to: '1'
+      plugins.express-forms.settings.recaptchaLoadScript:
+        from: 1
+        to: '1'
