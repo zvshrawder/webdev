@@ -57,27 +57,23 @@ return array (
     'developerUrl' => 'https://ethercreative.co.uk',
     'documentationUrl' => 'https://github.com/ethercreative/seo/blob/v3/README.md',
   ),
-  'xpertbot/craft-wheelform' => 
+  'solspace/craft-express-forms' => 
   array (
-    'class' => 'wheelform\\Plugin',
-    'basePath' => $vendorDir . '/xpertbot/craft-wheelform/src',
-    'handle' => 'wheelform',
+    'class' => 'Solspace\\ExpressForms\\ExpressForms',
+    'basePath' => $vendorDir . '/solspace/craft-express-forms/src',
+    'handle' => 'express-forms',
     'aliases' => 
     array (
-      '@wheelform' => $vendorDir . '/xpertbot/craft-wheelform/src',
+      '@Solspace/ExpressForms' => $vendorDir . '/solspace/craft-express-forms/src',
     ),
-    'name' => 'Wheel Form',
-    'version' => '2.4.2',
-    'description' => 'Craft CMS 3 Form administrator with Database integration',
-    'developer' => 'Wheel Interactive',
-    'developerUrl' => 'https://wheelinteractive.com',
-    'documentationUrl' => 'https://github.com/xpertbot/craft-wheelform/blob/master/README.md',
-    'changelogUrl' => 'https://github.com/xpertbot/craft-wheelform/CHANGELOG.md',
-    'hasCpSettings' => true,
-    'hasCpSection' => true,
-    'components' => 
-    array (
-      'mailer' => 'Wheelform\\Mailer',
-    ),
+    'name' => 'Express Forms',
+    'version' => '1.0.5',
+    'schemaVersion' => '1.0.1',
+    'description' => 'Intuitive and lightweight form builder that gets the job done but doesn’t get in your way.',
+    'developer' => 'Solspace',
+    'developerUrl' => 'http://craft.express/forms/v1/',
+    'developerEmail' => 'support@solspace.com',
+    'documentationUrl' => 'http://craft.express/forms/v1/',
+    'changelogUrl' => 'https://raw.githubusercontent.com/solspace/craft-express-forms/master/CHANGELOG.md',
   ),
 );
