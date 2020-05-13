@@ -30,7 +30,10 @@
         {% if field.type == "hidden" %}
         {# Hidden field formatting contents #}
         {% elseif field.type == "textarea" %}
-        {# Textarea field formatting contents #}
+            <div class="form-group">
+                <label for="{{ field.handle }}"{{ field.isRequired ? ' class="required"' }}>{{ field.label }}</label><br>
+                <textarea class="form-control" id="{{ field.handle }}" type="{{ field.type }}" name="{{ field.handle }}" value="{{ field.value }}" rows="5"></textarea>
+            </div>
         {% elseif field.type == "file" %}
         {# File field formatting contents #}
         {% else %}
@@ -58,6 +61,7 @@
         {% endif %}
         {% endfor %}
         {# End field render automation #}
+        <br>
         <input type="submit" value="Submit">
     </div>
     {{ form.closeTag }}
