@@ -1,0 +1,68 @@
+{#
+# This is the homepage template!
+#}
+
+{% extends "_layout" %}
+{% set title = entry.heading %}
+
+{% block content %}
+
+<header>
+
+</header>
+
+<main role="main" class="container">
+
+    <h1>{{ title }}</h1>
+    {{entry.heading}}
+    {{ entry.body }}
+    {%include 'components'%}
+    <!--http://craft.express/forms/v1/templating/#introduction-->
+    {% set form = craft.expressforms.form("contact") %}
+    {# General Errors, Success message, etc #}
+    {{ form.openTag({ return: 'contact/thanks' }) }}
+    {# Form Contents #}
+    <div class="container">
+        <!--container-->
+
+        {# Start field render automation #}
+        {% for field in form.fields %}
+        {% if field.type == "hidden" %}
+        {# Hidden field formatting contents #}
+        {% elseif field.type == "textarea" %}
+        {# Textarea field formatting contents #}
+        {% elseif field.type == "file" %}
+        {# File field formatting contents #}
+        {% else %}
+        {# Check on a Field Handle for Exception to formatting #}
+        {% if field.handle == "email" %}
+        {# Specific field formatting overrides #}
+            <div class="form-group">
+                <label for="{{ field.handle }}">Email address</label><br>
+                <input type="email" id="{{ field.handle }}" name="{{ field.handle }}" value="{{ field.value }}" placeholder="Enter email">
+            </div>
+        {% else %}
+        {# All other fields formatting - EXAMPLE #}
+        <div>
+            <label for="{{ field.handle }}"{{ field.isRequired ? ' class="required"' }}>{{ field.label }}</label><br>
+            <input id="{{ field.handle }}" type="{{ field.type }}" name="{{ field.handle }}" value="{{ field.value }}">
+            {% if field.errors %}
+            <ul class="errors">
+                {% for error in field.errors %}
+                <li>{{ error|t }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        {# End field render automation #}
+        <input type="submit" value="Submit">
+    </div>
+    {{ form.closeTag }}
+
+
+</main>
+{% endblock %}
+
