@@ -1,10 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "_layout" %}
+{% set title = entry.heading %}
 
-</body>
-</html>
+{% block content %}
+
+<header>
+
+</header>
+
+<main role="main" class="container">
+
+    <h1>{{ title }}</h1>
+    {{entry.heading}}
+    {{ entry.body }}
+    {%include 'components'%}
+
+
+</main>
+
+
+{%macro completed_Projects_Box()%}
+
+{%endmacro%}
+
+{%macro inprogress_Projects_Box()%}
+{%endmacro%}
+
+{%macro not_Started_Projects_Box()%}
+{%endmacro%}
+{% endblock %}

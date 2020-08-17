@@ -1,20 +1,28 @@
-dateApplied: '2020-05-13 09:09:49'
+dateApplied: '2020-08-17 12:32:31'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-        from: 1589386171
-        to: 1589386189
+        from: 1597692739
+        to: 1597692751
   -
-    message: 'Change settings for plugin “express-forms”'
+    message: 'Save section “projects”'
     changed:
-      plugins.express-forms.settings.honeypotEnabled:
-        from: 1
-        to: '1'
-      plugins.express-forms.settings.recaptchaEnabled:
-        from: null
-        to: '1'
-      plugins.express-forms.settings.recaptchaLoadScript:
-        from: 1
-        to: '1'
+      sections.18ec9747-3073-4b9b-9f7a-df11d505c79c.handle:
+        from: projectHub
+        to: projects
+      sections.18ec9747-3073-4b9b-9f7a-df11d505c79c.name:
+        from: 'Project Hub'
+        to: Projects
+  -
+    changed:
+      sections.18ec9747-3073-4b9b-9f7a-df11d505c79c.entryTypes.d3e8dc6c-4c48-4a8b-be10-3df2ce7feb15.name:
+        from: 'Project Hub'
+        to: Projects
+  -
+    message: 'Save entry type “projectHub”'
+    changed:
+      sections.18ec9747-3073-4b9b-9f7a-df11d505c79c.entryTypes.d3e8dc6c-4c48-4a8b-be10-3df2ce7feb15.name:
+        from: 'Project Hub'
+        to: Projects
