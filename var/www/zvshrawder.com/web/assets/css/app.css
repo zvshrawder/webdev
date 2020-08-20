@@ -155,3 +155,12 @@ h4
     background-color: grey;
 }
 
+
+/*nav*/
+@media (max-width: 768px)
+{
+    .nav-spacer
+    {
+        display: none;
+    }
+}

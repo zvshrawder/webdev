@@ -4,13 +4,14 @@
 
 
 
-
-<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+<div class = "row ">
+<div class="col-md-2 navbar navbar-expand-md navbar-dark bg-primary nav-spacer"></div>
+<nav class="navbar navbar-expand-md navbar-dark bg-primary col-md-8">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDD" aria-controls="navbarDD" aria-expanded="false" aria-label="Navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarDD">
+    <div class="collapse  navbar-collapse text-center" id="navbarDD ">
         <ul class="navbar-nav">
         {%for entry in entries%}
             {%set mainItem = entry.mainItem.first() ?? null %}
@@ -35,7 +36,7 @@
                 <li class="nav-item dropdown">
 
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Click
+                        {{mainItem.itemTitle}}
                     </a>
                     <ul class="dropdown-menu">
                         {%for childItem in childItems%}
@@ -55,4 +56,5 @@
 
     </div>
 </nav>
-
+<div class="col-md-2 navbar navbar-expand-md navbar-dark bg-primary nav-spacer"></div>
+</div>
