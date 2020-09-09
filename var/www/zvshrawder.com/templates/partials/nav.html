@@ -2,59 +2,89 @@
 .section('navigation')%}
 {% set entries = entryQuery.all() %}
 
+<!--create arrays-->
+{%set navItems = []%}
+
+
+<!--{# get entries #}-->
+{%for entry in entries%}
+    {%set items = []%}
+    {%set mainItem = entry.mainItem.first() ?? null %}
+    {%set childItems = entry.childItem.all() ?? null %}
+
+    <!--merge child items to main items into an array and then add to a single array-->
+    <!--[1 mainItem [x ChildItem]]-->
+
+    {%set items = items|merge({'main':mainItem})%}
+    {%set items = items|merge({'children':childItems})%}
+
+    {%set navItems = navItems|merge([items])%}
+{%endfor%}
+
 
 
 <div class = "row ">
-<div class="col-md-2 navbar navbar-expand-md navbar-dark bg-primary nav-spacer"></div>
-<nav class="navbar navbar-expand-md navbar-dark bg-primary col-md-8">
+<div class="col-md-2 navbar navbar-expand-md navbar-dark  nav-spacer"></div>
+<nav class="navbar navbar-expand-md navbar-dark  col-md-8">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDD" aria-controls="navbarDD" aria-expanded="false" aria-label="Navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse  navbar-collapse text-center" id="navbarDD ">
-        <ul class="navbar-nav">
-        {%for entry in entries%}
-            {%set mainItem = entry.mainItem.first() ?? null %}
-            {%set childItems = entry.childItem.all() ?? null %}
-
-            <!--<li class="nav-item active">-->
-                <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
-            <!--</li>-->
-
-            <!--if no clild title (required field for child items) -->
-            {%set mainItemUrl= null%}
-            {%if mainItem.itemEntry|length%}
-                {%set mainItemUrl= mainItem.itemEntry.first().url%}
-            {%endif%}
-            {%if mainItemUrl and not childItems|length%}
-            <li class="nav-item">
-                <a class="nav-link" href="{{mainItemUrl}}">{{mainItem.itemTitle}} </a>
-            </li>
-            {%elseif mainItem and childItems|length%}
+    <div class="row  navbar-collapse text-center" id="navbarDD ">
 
 
-                <li class="nav-item dropdown">
 
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        {{mainItem.itemTitle}}
-                    </a>
-                    <ul class="dropdown-menu">
-                        {%for childItem in childItems%}
-                        {%set childItemTitle = childItem.childTitle ?? null%}
-                        {%set childItemUrl = childItem.childEntry.first().url ?? null%}
-                        {%set childItemAsset = childItem.childAsset.first().url ?? null%}
-                        <li><a class="dropdown-item" href="{{childItem.childEntry.first().url}}">{{childItemTitle}}</a></li>
-                        {%endfor%}
-                    </ul>
-                </li>
 
-            {%else%}
-                {{dump(childItems)}}
-            {%endif%}
-        {%endfor%}
-        </ul>
+
+            <!--Output main items-->
+            {%for navItem in navItems%}
+            <div class="col-md-1 mainNavItem">
+
+                <!--if no child items-->
+                {%if navItem['children'][0] is not defined%}
+                    {%set url = ""%}
+                    {%if navItem['main'].itemEntry|length%}
+                        {%set url = navItem['main'].itemEntry.first().url%}
+                    {%endif%}
+                    <a href="{{url}}">{{navItem['main'].itemTitle}}</a>
+                    {%else%}
+                    <!--if child items-->
+                    <a href="" class="{{navItem['main'].itemTitle}}--parent" >{{navItem['main'].itemTitle}}</a>
+                {%endif%}
+            </div>
+            {%endfor%}
+
+
+
+
+
+
+
 
     </div>
 </nav>
-<div class="col-md-2 navbar navbar-expand-md navbar-dark bg-primary nav-spacer"></div>
+<div class="col-md-2 navbar navbar-expand-md navbar-dark nav-spacer"></div>
 </div>
+<!--Output Child items-->
+{%for navItem in navItems%}
+{%if navItem['children'][0] is defined%}
+<div class="row childrenNavRow {{navItem['main'].itemTitle}}--child">
+
+
+    <!--loop through children-->
+    {%for child in navItem['children']%}
+
+        <div class="row childNavRow">
+            <div class="col-md-6 childNavDetails">
+
+            </div>
+            <div class="col-md-6 childNavLink">
+
+            </div>
+        </div>
+    {%endfor%}
+
+
+</div>
+{%endif%}
+{%endfor%}

@@ -1,0 +1,77 @@
+{% set entryQuery = craft.entries()
+.section('navigation')%}
+{% set entries = entryQuery.all() %}
+
+
+
+<div class = "row ">
+<div class="col-md-2 navbar navbar-expand-md navbar-dark  nav-spacer"></div>
+<nav class="navbar navbar-expand-md navbar-dark  col-md-8">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDD" aria-controls="navbarDD" aria-expanded="false" aria-label="Navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse  navbar-collapse text-center" id="navbarDD ">
+        <ul class="navbar-nav">
+        {%for entry in entries%}
+            {%set mainItem = entry.mainItem.first() ?? null %}
+            {%set childItems = entry.childItem.all() ?? null %}
+
+            <!--<li class="nav-item active">-->
+                <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+            <!--</li>-->
+
+            <!--if no clild title (required field for child items) -->
+            {%set mainItemUrl= null%}
+            {%if mainItem.itemEntry|length%}
+                {%set mainItemUrl= mainItem.itemEntry.first().url%}
+            {%endif%}
+            {%if mainItemUrl and not childItems|length%}
+            <li class="nav-item">
+                <a class="nav-link" href="{{mainItemUrl}}">{{mainItem.itemTitle}} </a>
+            </li>
+            {%elseif mainItem and childItems|length%}
+
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{mainItem.itemTitle}}
+                    </a>
+                    <ul class="dropdown-menu childItems">
+                        {%for childItem in childItems%}
+                        {%set childItemTitle = childItem.childTitle ?? null%}
+                        {%set childItemUrl = childItem.childEntry.first().url ?? null%}
+                        {%set childItemAssetUrl = childItem.childAsset.first().url ?? null%}
+                        {%set childItemDescription = childItem.childDescription ?? null%}
+                        <li>
+                            <div class="row childItem">
+                                <div class="col-md-6 childLink">
+                                    <a class="dropdown-item" href="{{childItem.childEntry.first().url}}">{{childItemTitle}}</a>
+                                </div>
+                                <div class="col-md-6 childDetails">
+                                    <div class="row childDetails">
+                                        <div class="col-md-6 childImage">
+                                            <img class="" src="" >
+                                        </div>
+                                        <div class="col-md-6 childDescription">
+                                            {{childItemDescription}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        {%endfor%}
+                    </ul>
+                </li>
+
+            {%else%}
+                {{dump(childItems)}}
+            {%endif%}
+        {%endfor%}
+        </ul>
+
+    </div>
+</nav>
+<div class="col-md-2 navbar navbar-expand-md navbar-dark nav-spacer"></div>
+</div>
