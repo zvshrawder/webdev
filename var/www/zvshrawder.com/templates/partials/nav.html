@@ -36,9 +36,10 @@
 
 
 
+
             <!--Output main items-->
             {%for navItem in navItems%}
-            <div class="col-md-1 mainNavItem">
+            <div class="col-sm-2 mainNavItem">
 
                 <!--if no child items-->
                 {%if navItem['children'][0] is not defined%}
@@ -68,18 +69,42 @@
 <!--Output Child items-->
 {%for navItem in navItems%}
 {%if navItem['children'][0] is defined%}
-<div class="row childrenNavRow {{navItem['main'].itemTitle}}--child">
+<div class="childrenNavItems {{navItem['main'].itemTitle}}--child">
 
 
     <!--loop through children-->
     {%for child in navItem['children']%}
+        <!--child title-->
+        {%set childTitle = child.childTitle%}
+        <!--set image-->
+        {%set childImage ="rev('/images/missing.png')"%}
+        {%if child.childAsset is defined%}
+            {%set childImage = child.childAsset.one().url()%}
+        {%endif%}
+
+        <!--set child details-->
+        {%set childDetails =""%}
+        {%if child.childDescription%}
+            {%set childDetails = child.childDescription%}
+        {%endif%}
+
+        <!--child link-->
+        {%set childLink = ""%}
+        {%if child.childEntry%}
+            {%set childLink = child.childEntry.one().url()%}
+        {%endif%}
 
         <div class="row childNavRow">
-            <div class="col-md-6 childNavDetails">
+            <div class="col-sm-3 childNavImageBox">
+                <img src="{{childImage}}" class="childNavImage img-responsive" load="lazy">
 
             </div>
-            <div class="col-md-6 childNavLink">
+            <div class="col-sm-3 childNavDetails">
+            {{childDetails}}
 
+            </div>
+            <div class="col-sm-6 childNavLink">
+                <a href="{{childLink}}" class="childNavLink">{{childTitle}}</a>
             </div>
         </div>
     {%endfor%}
