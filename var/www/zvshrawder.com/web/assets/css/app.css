@@ -192,11 +192,20 @@ h4
     padding: 0;
     font-size: 1.5rem;
 }
-.mainNavItem > p > a
+.mainNavItem >  a
 {
 
     display: contents;
-    color: red;
+    text-decoration: none;
+    color:white;
+}
+
+.mainNavItem >  a:hover
+{
+
+    display: contents;
+    text-decoration: none;
+    color:white;
 }
 
 .childItems
@@ -209,14 +218,45 @@ h4
     display: none;
 }
 
-
+.childNavRow
+{
+    background-color: #c0c0c0;
+    border-style: solid;
+    border-color: #1d69ab;
+}
 /*child nav*/
 .childNavImageBox
 {
     overflow: hidden;
+    text-align: center;
+
+
+
 }
 .childNavImage
 {
-    max-height: 20rem;
+    max-height: 8rem;
     max-width: 100%;
+    display: inline-block;
+
+}
+
+
+.childNavDetails , .childNavLink
+{
+    text-align: left;
+    font-size: 1.25rem;
+}
+
+.childNavLink > a
+{
+    display: contents;
+    text-decoration: none;
+    color:white;
+}
+.childNavLink > a:hover
+{
+    display: contents;
+    text-decoration: none;
+    color:white;
 }

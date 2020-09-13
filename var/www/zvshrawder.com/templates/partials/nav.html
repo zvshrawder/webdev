@@ -30,7 +30,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDD" aria-controls="navbarDD" aria-expanded="false" aria-label="Navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="row  navbar-collapse text-center" id="navbarDD ">
+    <div class="row  navbar-collapse text-center navbarMain">
 
 
 
@@ -69,7 +69,7 @@
 <!--Output Child items-->
 {%for navItem in navItems%}
 {%if navItem['children'][0] is defined%}
-<div class="childrenNavItems {{navItem['main'].itemTitle}}--child">
+<div class="childrenNavItems {{navItem['main'].itemTitle}}--child hiddenNavRow">
 
 
     <!--loop through children-->
