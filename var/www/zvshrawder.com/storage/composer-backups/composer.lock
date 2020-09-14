@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fbae85ce5a5b2ac1b656ae888cf91e5e",
+    "content-hash": "381800226cee37a322793d463891cd7f",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -4902,57 +4902,6 @@
                 "graphql"
             ],
             "time": "2018-09-02T14:59:54+00:00"
-        },
-        {
-            "name": "xpertbot/craft-wheelform",
-            "version": "2.4.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/xpertbot/craft-wheelform/zipball/a64461a14d55197cb1c2a4176eab77c9ad1552c8",
-                "reference": "a64461a14d55197cb1c2a4176eab77c9ad1552c8",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0-RC1"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Wheel Form",
-                "handle": "wheelform",
-                "hasCpSettings": true,
-                "hasCpSection": true,
-                "changelogUrl": "https://github.com/xpertbot/craft-wheelform/CHANGELOG.md",
-                "components": {
-                    "mailer": "Wheelform\\Mailer"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "wheelform\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Wheel Interactive",
-                    "homepage": "https://wheelinteractive.com"
-                }
-            ],
-            "description": "Craft CMS 3 Form administrator with Database integration",
-            "keywords": [
-                "Wheel Form",
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms"
-            ],
-            "support": {
-                "docs": "https://github.com/xpertbot/craft-wheelform/blob/master/README.md",
-                "issues": "https://github.com/xpertbot/craft-wheelform/issues"
-            },
-            "time": "2020-03-01T03:42:10+00:00"
         },
         {
             "name": "yii2tech/ar-softdelete",

@@ -260,3 +260,24 @@ h4
     text-decoration: none;
     color:white;
 }
+
+
+/*search things*/
+.searchContainer
+{
+    text-align: left;
+    font-size: 1.5rem;
+}
+.searchIcon{
+
+}
+
+.searchContainer > a
+{
+    color: white;
+}
+
+.searchHidden
+{
+    display:none;
+}

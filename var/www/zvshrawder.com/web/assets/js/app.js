@@ -1,6 +1,8 @@
 $(document).ready(function () {
     "use strict";
 
+    /*start of Nav Bar Nav code*/
+
     //check the passed array of classes to see if one matches
     //if so we split take the nav item name add --child to it
     //and return that.
@@ -43,13 +45,13 @@ $(document).ready(function () {
         $('.nav_bar').find('.'+className).removeClass('hiddenNavRow');
     }
 
-    $('.nav_bar').on("click", ".mainNavItem a", function (e) {
+    $('.nav_bar').on("click", ".mainNavItem a", function (el) {
 
        var elementClasses = $(this).attr('class');
         try {
             elementClasses = elementClasses.split(" ");
             var childNavClass = getChildNavClass(elementClasses);
-            e.preventDefault();
+            el.preventDefault();
             //check if nav is open
             var isHidden =$('.nav_bar').find('.'+childNavClass).hasClass("hiddenNavRow");
             hideChildNavs();
@@ -67,8 +69,42 @@ $(document).ready(function () {
 
     });
 
+    /*end of Nav Bar code*/
+
+    /*start of Head search code*/
+
+
+    //replace icon with search box
+    $('.header_bar').on("click",".searchIcon", function(el)
+    {
+        //hide the div with the search icon and unhide the one with the search bar
+        $('.header_bar').find('.searchContainer').has('input').removeClass('searchHidden');
+        $('.header_bar').find('.searchContainer').has('a').addClass('searchHidden');
+
+        el.preventDefault();
 
 
 
+    });
+
+
+    //send search to search page
+    //trigered by pressing enter
+
+
+    //getback prepopulated possible results (changes on text entry into the box
+    // and should use an AJAX request to a RESTFUL API to get back n results
+    //
+
+
+    //should be used to build rows floating over content holding the n results
+    //Param:Array of results
+    //return: void
+    function showHeadSearchResults(arr)
+    {
+
+    }
+
+    /*end of Head search code*/
 
 });
