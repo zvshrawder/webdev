@@ -62,7 +62,7 @@ class Number extends ScalarType
      */
     public function serialize($value)
     {
-        if (is_string($value) && is_numeric($value)) {
+        if (is_string($value) || is_numeric($value)) {
             if ((int)$value == $value) {
                 return (int)$value;
             }
@@ -108,7 +108,7 @@ class Number extends ScalarType
             return null;
         }
 
-        // Intentionally without message, as all information already in wrapped Exception
+        // This message will be lost by the wrapping exception, but it feels good to provide one.
         throw new GqlException("Number must be either a float or an integer.");
     }
 }

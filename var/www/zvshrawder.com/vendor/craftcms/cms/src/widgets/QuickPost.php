@@ -35,8 +35,13 @@ class QuickPost extends Widget
      */
     public static function icon()
     {
-        return Craft::getAlias('@app/icons/newspaper.svg');
+        return Craft::getAlias('@appicons/newspaper.svg');
     }
+
+    /**
+     * @var string The site ID that the widget should pull entries from
+     */
+    public $siteId;
 
     /**
      * @var int|null The ID of the section that the widget should post to
@@ -155,6 +160,7 @@ class QuickPost extends Widget
         $entryType = $entryTypes[$entryTypeId];
 
         $params = [
+            'siteId' => $this->siteId ?? Craft::$app->getSites()->getPrimarySite()->id,
             'sectionId' => $section->id,
             'typeId' => $entryTypeId,
         ];

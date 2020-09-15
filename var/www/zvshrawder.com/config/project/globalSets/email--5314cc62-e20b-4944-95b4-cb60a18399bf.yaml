@@ -1,0 +1,12 @@
+fieldLayouts:
+  c98edf32-0b35-4133-ba36-3ccd9045bad7:
+    tabs:
+      -
+        fields:
+          0e3dfd98-868e-4274-9ac2-7c8148d58937:
+            required: false
+            sortOrder: 1
+        name: 'Tab 1'
+        sortOrder: 1
+handle: email
+name: Email

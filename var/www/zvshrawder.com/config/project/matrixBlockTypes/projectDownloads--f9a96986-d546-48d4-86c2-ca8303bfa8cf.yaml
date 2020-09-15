@@ -1,0 +1,85 @@
+field: 23140083-18b3-4a7c-a3d0-8a6ff58cfaad
+fieldLayouts:
+  b03191f4-b9ce-4bbd-a4bd-681ba57cd830:
+    tabs:
+      -
+        fields:
+          094d0a49-9f8d-48e5-8010-37e3df18e3f6:
+            required: false
+            sortOrder: 1
+          b35c7101-fc67-43a1-b11d-7481db315198:
+            required: false
+            sortOrder: 2
+          ca96ede3-fb24-4daf-a3c3-aa5d88443f61:
+            required: false
+            sortOrder: 3
+        name: Content
+        sortOrder: 1
+fields:
+  094d0a49-9f8d-48e5-8010-37e3df18e3f6:
+    contentColumnType: text
+    fieldGroup: null
+    handle: downloadTitle
+    instructions: ''
+    name: 'Download Title'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b35c7101-fc67-43a1-b11d-7481db315198:
+    contentColumnType: text
+    fieldGroup: null
+    handle: downloadDescription
+    instructions: ''
+    name: 'Download Description'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ca96ede3-fb24-4daf-a3c3-aa5d88443f61:
+    contentColumnType: string
+    fieldGroup: null
+    handle: download
+    instructions: ''
+    name: Download
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:a1178754-f348-43e6-8904-92809199cf40'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:bd1832cd-2bf2-4c1a-abc0-6f974ed453da'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: projectDownloads
+name: 'Project Downloads'
+sortOrder: 1

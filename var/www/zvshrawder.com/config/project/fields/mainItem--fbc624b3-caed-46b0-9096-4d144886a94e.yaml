@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 88913e27-9e19-465a-a52c-c47fe079041f
+handle: mainItem
+instructions: ''
+name: 'Main Item'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_mainitem}}'
+  maxBlocks: '1'
+  minBlocks: '1'
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -9,7 +9,6 @@ namespace craft\gql\base;
 
 use craft\elements\db\ElementQueryInterface;
 use craft\errors\GqlException;
-use craft\gql\GqlEntityRegistry;
 use craft\helpers\Gql as GqlHelper;
 use GraphQL\Type\Definition\ObjectType as GqlObjectType;
 use GraphQL\Type\Definition\ResolveInfo;
@@ -66,11 +65,17 @@ abstract class ObjectType extends GqlObjectType
      */
     protected function resolve($source, $arguments, $context, ResolveInfo $resolveInfo)
     {
-        $result = $source->{$resolveInfo->fieldName};
-        
-        if ($result instanceof ElementQueryInterface) {
-            return $result->all();
+        $fieldName = GqlHelper::getFieldNameWithAlias($resolveInfo, $source);
+
+        $result = null;
+
+        if (is_object($source)) {
+            $result = $source->$fieldName;
+        } else if (is_array($source)) {
+            $result = $source[$fieldName] ?? null;
         }
+
+        $result = $result instanceof ElementQueryInterface ? $result->all(): $result;
 
         return $result;
     }

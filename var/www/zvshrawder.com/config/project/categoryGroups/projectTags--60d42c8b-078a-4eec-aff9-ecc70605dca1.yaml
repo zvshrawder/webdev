@@ -1,0 +1,10 @@
+handle: projectTags
+name: 'Project Tags'
+siteSettings:
+  31a71437-b85c-4bac-aa28-244f320824a5:
+    hasUrls: true
+    template: ''
+    uriFormat: 'project-tags/{slug}'
+structure:
+  maxLevels: null
+  uid: 9fe80b3f-a493-4b52-95a6-d5990c21552a

@@ -1,0 +1,10 @@
+handle: blogPostTypes
+name: 'Blog Post Types'
+siteSettings:
+  31a71437-b85c-4bac-aa28-244f320824a5:
+    hasUrls: true
+    template: ''
+    uriFormat: 'blog-post-types/{slug}'
+structure:
+  maxLevels: null
+  uid: 9e46444e-c40a-46aa-a43f-dedb76928045

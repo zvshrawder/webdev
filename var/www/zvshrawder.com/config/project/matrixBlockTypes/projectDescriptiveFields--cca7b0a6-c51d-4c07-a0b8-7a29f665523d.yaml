@@ -1,0 +1,165 @@
+field: 9701e7d4-94eb-42da-a020-20dc1b294723
+fieldLayouts:
+  81adb86e-0792-4155-97b4-27d1b8a93d50:
+    tabs:
+      -
+        fields:
+          10f45889-5b23-49e6-8b2a-13c25096ceaf:
+            required: false
+            sortOrder: 5
+          20d738c1-5ee5-4fad-bc06-c8218638d7d7:
+            required: false
+            sortOrder: 2
+          309da556-1808-4344-8639-08f5e6187bf4:
+            required: true
+            sortOrder: 1
+          4b22f7f9-bb76-45e4-a566-1de393c35437:
+            required: true
+            sortOrder: 4
+          a7f3013b-2dab-4945-abb0-5f8152d75d80:
+            required: false
+            sortOrder: 3
+        name: Content
+        sortOrder: 1
+fields:
+  10f45889-5b23-49e6-8b2a-13c25096ceaf:
+    contentColumnType: text
+    fieldGroup: null
+    handle: instructions
+    instructions: "How do you run it.\r\nDo you need any other software (i.e. a min version of JVM or such)."
+    name: Instructions
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  20d738c1-5ee5-4fad-bc06-c8218638d7d7:
+    contentColumnType: string(2000)
+    fieldGroup: null
+    handle: shortDescription
+    instructions: 'In a few words summarize the project (for use in things like searches search engine descriptions, etc).'
+    name: 'Short Description'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: 500
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  309da556-1808-4344-8639-08f5e6187bf4:
+    contentColumnType: string
+    fieldGroup: null
+    handle: projectStatus
+    instructions: ''
+    name: 'Project Status'
+    searchable: true
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Not Started'
+            -
+              - value
+              - notStarted
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 'In Progress'
+            -
+              - value
+              - inProgress
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Completed
+            -
+              - value
+              - completed
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  4b22f7f9-bb76-45e4-a566-1de393c35437:
+    contentColumnType: string
+    fieldGroup: null
+    handle: descriptiveImage
+    instructions: 'An image (generally showing the project functioning or a Title screen).'
+    name: 'Descriptive Image'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:a1178754-f348-43e6-8904-92809199cf40'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:a1178754-f348-43e6-8904-92809199cf40'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  a7f3013b-2dab-4945-abb0-5f8152d75d80:
+    contentColumnType: text
+    fieldGroup: null
+    handle: explanation
+    instructions: 'What is the goal of the project. Any interesting things about it?'
+    name: Explanation
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: projectDescriptiveFields
+name: 'Project Descriptive Fields'
+sortOrder: 1

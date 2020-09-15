@@ -1,0 +1,7 @@
+handle: projectHub
+hasTitleField: false
+name: Projects
+section: 18ec9747-3073-4b9b-9f7a-df11d505c79c
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleLabel: null

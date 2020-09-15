@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: 571ec2c8-2af4-43c7-b870-67e1f93f713f
+handle: heading
+instructions: ''
+name: Heading
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

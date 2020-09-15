@@ -35,8 +35,13 @@ class RecentEntries extends Widget
      */
     public static function icon()
     {
-        return Craft::getAlias('@app/icons/clock.svg');
+        return Craft::getAlias('@appicons/clock.svg');
     }
+
+    /**
+     * @var int|null The site ID that the widget should pull entries from
+     */
+    public $siteId;
 
     /**
      * @var string|int[] The section IDs that the widget should pull entries from
@@ -44,12 +49,7 @@ class RecentEntries extends Widget
     public $section = '*';
 
     /**
-     * string The site ID that the widget should pull entries from
-     */
-    public $siteId;
-
-    /**
-     * int The total number of entries that the widget should show
+     * @var int The total number of entries that the widget should show
      */
     public $limit = 10;
 

@@ -67,13 +67,30 @@ return array (
       '@Solspace/ExpressForms' => $vendorDir . '/solspace/craft-express-forms/src',
     ),
     'name' => 'Express Forms',
-    'version' => '1.0.5',
+    'version' => '1.0.6',
     'schemaVersion' => '1.0.1',
     'description' => 'Intuitive and lightweight form builder that gets the job done but doesn’t get in your way.',
     'developer' => 'Solspace',
-    'developerUrl' => 'http://craft.express/forms/v1/',
+    'developerUrl' => 'https://craft.express/forms/v1/',
     'developerEmail' => 'support@solspace.com',
-    'documentationUrl' => 'http://craft.express/forms/v1/',
+    'documentationUrl' => 'https://craft.express/forms/v1/',
     'changelogUrl' => 'https://raw.githubusercontent.com/solspace/craft-express-forms/master/CHANGELOG.md',
+  ),
+  'craftcms/element-api' => 
+  array (
+    'class' => 'craft\\elementapi\\Plugin',
+    'basePath' => $vendorDir . '/craftcms/element-api/src',
+    'handle' => 'element-api',
+    'aliases' => 
+    array (
+      '@craft/elementapi' => $vendorDir . '/craftcms/element-api/src',
+    ),
+    'name' => 'Element API',
+    'version' => '2.6.0',
+    'description' => 'Create a JSON API for your elements in Craft',
+    'developer' => 'Pixel & Tonic',
+    'developerUrl' => 'https://pixelandtonic.com/',
+    'developerEmail' => 'support@craftcms.com',
+    'documentationUrl' => 'https://github.com/craftcms/element-api/blob/v2/README.md',
   ),
 );

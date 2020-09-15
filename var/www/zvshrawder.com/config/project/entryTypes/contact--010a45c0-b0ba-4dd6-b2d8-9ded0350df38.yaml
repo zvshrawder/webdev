@@ -1,0 +1,7 @@
+handle: contact
+hasTitleField: false
+name: Contact
+section: 7f2912ec-7da3-4bac-8e04-0467652a08f9
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleLabel: null

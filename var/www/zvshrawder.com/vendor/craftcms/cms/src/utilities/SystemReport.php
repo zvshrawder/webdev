@@ -47,7 +47,7 @@ class SystemReport extends Utility
      */
     public static function iconPath()
     {
-        return Craft::getAlias('@app/icons/check.svg');
+        return Craft::getAlias('@appicons/check.svg');
     }
 
     /**
@@ -114,7 +114,7 @@ class SystemReport extends Utility
             $driverName = 'PostgreSQL';
         }
 
-        return $driverName . ' ' . $db->getVersion();
+        return $driverName . ' ' . App::normalizeVersion($db->getSchema()->getServerVersion());
     }
 
     /**

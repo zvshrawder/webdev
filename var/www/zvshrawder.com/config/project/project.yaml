@@ -1,0 +1,47 @@
+dateModified: 1600180057
+email:
+  fromEmail: zvshrawder@gmail.com
+  fromName: Zvshrawder
+  transportType: craft\mail\transportadapters\Sendmail
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+plugins:
+  assetrev:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  express-forms:
+    edition: lite
+    enabled: true
+    schemaVersion: 1.0.1
+    settings:
+      duplicatePreventionEnabled: true
+      emailNotificationsDirectoryPath: null
+      enhancedUI: true
+      honeypotBehaviour: simulate_success
+      honeypotEnabled: '1'
+      honeypotInputName: click_me
+      name: null
+      recaptchaEnabled: '1'
+      recaptchaLoadScript: '1'
+      recaptchaSecretKey: null
+      recaptchaSiteKey: null
+      showErrorLogBanner: true
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: Zvshrawder
+  schemaVersion: 3.5.13
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true

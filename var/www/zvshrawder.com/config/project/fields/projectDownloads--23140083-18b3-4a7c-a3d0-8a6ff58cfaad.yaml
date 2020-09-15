@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: f5200316-289d-4fda-a914-82d1447daacf
+handle: projectDownloads
+instructions: ''
+name: 'Project Downloads'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_projectdownloads}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

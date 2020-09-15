@@ -1,0 +1,356 @@
+field: a456657d-ff3c-4c23-856d-8aa6025479c9
+fieldLayouts:
+  ae231821-dc94-4508-bdcf-a2262f0a0966:
+    tabs:
+      -
+        fields:
+          01d9bbb8-8e34-4d24-9d1f-3bc9263ddc0d:
+            required: true
+            sortOrder: 4
+          1da5a73f-73f8-4c1f-9443-d95017ea8bc7:
+            required: false
+            sortOrder: 10
+          328bd823-3e56-49d1-b710-97ba13b7f54b:
+            required: false
+            sortOrder: 8
+          41717c26-6d38-4f20-bb9e-4644046ec050:
+            required: false
+            sortOrder: 2
+          5153803f-8690-42e8-8d33-3e07ad8943d3:
+            required: false
+            sortOrder: 9
+          8870fa14-655b-4249-bb19-5a0d5f94680e:
+            required: true
+            sortOrder: 7
+          99a4983a-c5e1-4d13-81c3-98df3713aa41:
+            required: false
+            sortOrder: 3
+          abd907f7-afde-4ec3-b9d3-0d913d1ef27b:
+            required: false
+            sortOrder: 5
+          b69ea325-57f8-40ba-b987-393f09000803:
+            required: false
+            sortOrder: 6
+          caa5fdf1-9823-439c-a423-4d8541b25378:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  01d9bbb8-8e34-4d24-9d1f-3bc9263ddc0d:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:a1178754-f348-43e6-8904-92809199cf40'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:a1178754-f348-43e6-8904-92809199cf40'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  1da5a73f-73f8-4c1f-9443-d95017ea8bc7:
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: borderWidth
+    instructions: 'In pixels'
+    name: 'Border Width'
+    searchable: true
+    settings:
+      decimals: 0
+      defaultValue: '0'
+      max: null
+      min: '0'
+      prefix: ''
+      size: null
+      suffix: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  328bd823-3e56-49d1-b710-97ba13b7f54b:
+    contentColumnType: string
+    fieldGroup: null
+    handle: borderStyle
+    instructions: ''
+    name: 'Border Style'
+    searchable: true
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - None
+            -
+              - value
+              - none
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Dotted
+            -
+              - value
+              - dotted
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Dashed
+            -
+              - value
+              - dashed
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Solid
+            -
+              - value
+              - solid
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Double
+            -
+              - value
+              - double
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Groove
+            -
+              - value
+              - groove
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Ridge
+            -
+              - value
+              - ridge
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Inset
+            -
+              - value
+              - inset
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Outset
+            -
+              - value
+              - outset
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Hidden
+            -
+              - value
+              - hidden
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  41717c26-6d38-4f20-bb9e-4644046ec050:
+    contentColumnType: string(7)
+    fieldGroup: null
+    handle: textColor
+    instructions: ''
+    name: 'Text Color'
+    searchable: true
+    settings:
+      defaultColor: '#000000'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Color
+  5153803f-8690-42e8-8d33-3e07ad8943d3:
+    contentColumnType: string(7)
+    fieldGroup: null
+    handle: borderColor
+    instructions: ''
+    name: 'Border Color'
+    searchable: true
+    settings:
+      defaultColor: '#000000'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Color
+  8870fa14-655b-4249-bb19-5a0d5f94680e:
+    contentColumnType: text
+    fieldGroup: null
+    handle: alt
+    instructions: 'Images alt text.'
+    name: alt
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'A picture'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  99a4983a-c5e1-4d13-81c3-98df3713aa41:
+    contentColumnType: string(7)
+    fieldGroup: null
+    handle: backgroundColor
+    instructions: ''
+    name: 'Background Color'
+    searchable: true
+    settings:
+      defaultColor: '#ffffff'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Color
+  abd907f7-afde-4ec3-b9d3-0d913d1ef27b:
+    contentColumnType: string
+    fieldGroup: null
+    handle: imageSide
+    instructions: 'The Side the Image Goes on'
+    name: 'Image Side'
+    searchable: true
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Left
+            -
+              - value
+              - left
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Right
+            -
+              - value
+              - right
+            -
+              - default
+              - '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  b69ea325-57f8-40ba-b987-393f09000803:
+    contentColumnType: string
+    fieldGroup: null
+    handle: breakOrder
+    instructions: 'How the halves will stack. Right means the right most col will drop bellow the left one when the screen is to small.'
+    name: 'Break Order'
+    searchable: true
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Right
+            -
+              - value
+              - right
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Left
+            -
+              - value
+              - left
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  caa5fdf1-9823-439c-a423-4d8541b25378:
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: sideBySide
+name: 'Side By Side'
+sortOrder: 2

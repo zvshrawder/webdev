@@ -1,0 +1,488 @@
+field: a456657d-ff3c-4c23-856d-8aa6025479c9
+fieldLayouts:
+  519edd18-8d36-4fc4-9be6-276631fd60fb:
+    tabs:
+      -
+        fields:
+          1940d3a9-4c05-4dbf-87f3-35805998690b:
+            required: false
+            sortOrder: 15
+          2e1bb468-c3f5-410c-9e2a-e90dc662b408:
+            required: false
+            sortOrder: 11
+          3447d2d5-3999-4060-8a2b-614822bafb20:
+            required: false
+            sortOrder: 2
+          4aead365-db32-4253-8740-8faae7826f04:
+            required: false
+            sortOrder: 4
+          5cf61749-cf5e-45ad-9b7f-28bf5fb29c7a:
+            required: false
+            sortOrder: 12
+          7facc6ac-7163-499e-9365-939e1421eb96:
+            required: false
+            sortOrder: 3
+          903ce6d5-6dae-4b2d-9f07-2f67cc8c97ce:
+            required: false
+            sortOrder: 5
+          97b5e1e1-00ce-4858-8131-f77a553d1d9d:
+            required: false
+            sortOrder: 6
+          b3de7b9d-55e9-461a-a01e-1004ec389c55:
+            required: false
+            sortOrder: 1
+          b422e13d-5b77-4697-ac92-aa0f8a94bf89:
+            required: false
+            sortOrder: 14
+          c1759983-5d56-4c3f-8d66-d41baee8b574:
+            required: false
+            sortOrder: 10
+          e4b7574e-c130-48cd-9e2e-adbb214c71e3:
+            required: false
+            sortOrder: 9
+          e725083d-8472-4b2f-a278-2f7ec001b07c:
+            required: false
+            sortOrder: 7
+          e99714af-fbf5-42c6-8d4f-7b876dade784:
+            required: false
+            sortOrder: 13
+          f3237bea-9b90-44dd-9983-b54a7a112244:
+            required: false
+            sortOrder: 8
+        name: Content
+        sortOrder: 1
+fields:
+  1940d3a9-4c05-4dbf-87f3-35805998690b:
+    contentColumnType: string
+    fieldGroup: null
+    handle: borderStyle
+    instructions: ''
+    name: 'Border Style'
+    searchable: true
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - None
+            -
+              - value
+              - none
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Dotted
+            -
+              - value
+              - dotted
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Dashed
+            -
+              - value
+              - dashed
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Solid
+            -
+              - value
+              - solid
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Double
+            -
+              - value
+              - double
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Groove
+            -
+              - value
+              - groove
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Ridge
+            -
+              - value
+              - ridge
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Inset
+            -
+              - value
+              - inset
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Outset
+            -
+              - value
+              - outset
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Hidden
+            -
+              - value
+              - hidden
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  2e1bb468-c3f5-410c-9e2a-e90dc662b408:
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: textPaddingLeft
+    instructions: 'in %'
+    name: 'Text Padding Left'
+    searchable: true
+    settings:
+      decimals: 0
+      defaultValue: '0'
+      max: null
+      min: null
+      prefix: ''
+      size: null
+      suffix: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  3447d2d5-3999-4060-8a2b-614822bafb20:
+    contentColumnType: string
+    fieldGroup: null
+    handle: horizontalHeaderTextAlignment
+    instructions: ''
+    name: 'Horizontal Header Text Alignment'
+    searchable: true
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Left
+            -
+              - value
+              - left
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Center
+            -
+              - value
+              - center
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Right
+            -
+              - value
+              - right
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  4aead365-db32-4253-8740-8faae7826f04:
+    contentColumnType: string
+    fieldGroup: null
+    handle: horizontalBodyTextAlignment
+    instructions: ''
+    name: 'Horizontal Body Text Alignment'
+    searchable: true
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Center
+            -
+              - value
+              - center
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Left
+            -
+              - value
+              - left
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Right
+            -
+              - value
+              - right
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  5cf61749-cf5e-45ad-9b7f-28bf5fb29c7a:
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: textPaddingRight
+    instructions: 'in %'
+    name: 'Text Padding Right'
+    searchable: true
+    settings:
+      decimals: 0
+      defaultValue: '0'
+      max: null
+      min: null
+      prefix: ''
+      size: null
+      suffix: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  7facc6ac-7163-499e-9365-939e1421eb96:
+    contentColumnType: text
+    fieldGroup: null
+    handle: bodyText
+    instructions: ''
+    name: 'Body Text'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  903ce6d5-6dae-4b2d-9f07-2f67cc8c97ce:
+    contentColumnType: string(7)
+    fieldGroup: null
+    handle: backgroundColor
+    instructions: ''
+    name: 'Background Color'
+    searchable: true
+    settings:
+      defaultColor: '#ffffff'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Color
+  97b5e1e1-00ce-4858-8131-f77a553d1d9d:
+    contentColumnType: string
+    fieldGroup: null
+    handle: backgroundImage
+    instructions: "An image that will be centered and stretched across the box. \r\nEffectively takes the place of the background color, if filled."
+    name: 'Background Image'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:a1178754-f348-43e6-8904-92809199cf40'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:a1178754-f348-43e6-8904-92809199cf40'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: '1'
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  b3de7b9d-55e9-461a-a01e-1004ec389c55:
+    contentColumnType: text
+    fieldGroup: null
+    handle: headingText
+    instructions: ''
+    name: 'Heading Text'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  b422e13d-5b77-4697-ac92-aa0f8a94bf89:
+    contentColumnType: string(7)
+    fieldGroup: null
+    handle: borderColor
+    instructions: ''
+    name: 'Border Color'
+    searchable: true
+    settings:
+      defaultColor: '#1d69ab'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Color
+  c1759983-5d56-4c3f-8d66-d41baee8b574:
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: textPaddingBottom
+    instructions: 'in %'
+    name: 'Text Padding Bottom'
+    searchable: true
+    settings:
+      decimals: 0
+      defaultValue: '0'
+      max: null
+      min: null
+      prefix: ''
+      size: null
+      suffix: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  e4b7574e-c130-48cd-9e2e-adbb214c71e3:
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: textPaddingTop
+    instructions: 'in %'
+    name: 'Text Padding Top'
+    searchable: true
+    settings:
+      decimals: 0
+      defaultValue: '0'
+      max: null
+      min: null
+      prefix: ''
+      size: null
+      suffix: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  e725083d-8472-4b2f-a278-2f7ec001b07c:
+    contentColumnType: string(7)
+    fieldGroup: null
+    handle: textColor
+    instructions: ''
+    name: 'Text Color'
+    searchable: true
+    settings:
+      defaultColor: '#000000'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Color
+  e99714af-fbf5-42c6-8d4f-7b876dade784:
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: borderWidth
+    instructions: 'In px'
+    name: 'Border width'
+    searchable: true
+    settings:
+      decimals: 0
+      defaultValue: '0'
+      max: null
+      min: '0'
+      prefix: ''
+      size: null
+      suffix: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  f3237bea-9b90-44dd-9983-b54a7a112244:
+    contentColumnType: smallint(2)
+    fieldGroup: null
+    handle: columnSize
+    instructions: ''
+    name: 'Column Size'
+    searchable: true
+    settings:
+      decimals: 0
+      defaultValue: '12'
+      max: '12'
+      min: '1'
+      prefix: ''
+      size: null
+      suffix: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+handle: welcomeBox
+name: 'Welcome Box'
+sortOrder: 1

@@ -1,0 +1,25 @@
+fieldLayouts:
+  598fad71-80d8-46eb-8844-4e77616d5f54:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: fbc624b3-caed-46b0-9096-4d144886a94e
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 76525a66-c937-4a04-ad0a-1e355fc61c49
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Tab 1'
+        sortOrder: 1
+handle: navigation
+hasTitleField: true
+name: navigation
+section: f68afc58-ae61-4518-8856-3df569d631cc
+sortOrder: 1
+titleFormat: ''

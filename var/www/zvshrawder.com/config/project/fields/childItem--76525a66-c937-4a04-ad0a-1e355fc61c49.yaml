@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 88913e27-9e19-465a-a52c-c47fe079041f
+handle: childItem
+instructions: ''
+name: 'Child Item'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_childitem}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

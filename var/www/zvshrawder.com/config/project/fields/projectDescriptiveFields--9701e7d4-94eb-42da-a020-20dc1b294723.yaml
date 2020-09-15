@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: f5200316-289d-4fda-a914-82d1447daacf
+handle: projectDescriptiveFields
+instructions: 'Fields to build out the projects'
+name: 'Project Descriptive Fields'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_projectdescriptivefields}}'
+  maxBlocks: '1'
+  minBlocks: '1'
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

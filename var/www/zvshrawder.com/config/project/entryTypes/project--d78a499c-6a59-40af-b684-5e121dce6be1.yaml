@@ -1,0 +1,29 @@
+fieldLayouts:
+  bd433c48-bf3d-4dd3-bcfb-c205321ea45c:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 9701e7d4-94eb-42da-a020-20dc1b294723
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: f4f7842a-b76d-4e27-af2e-7b62672a5735
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 23140083-18b3-4a7c-a3d0-8a6ff58cfaad
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Tab 1'
+        sortOrder: 1
+handle: project
+hasTitleField: true
+name: Project
+section: df2fe2aa-102f-4ede-99cc-9aadd29bb32b
+sortOrder: 1
+titleFormat: ''
