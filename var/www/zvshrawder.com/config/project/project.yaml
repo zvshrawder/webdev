@@ -1,4 +1,4 @@
-dateModified: 1600180057
+dateModified: 1600181061
 email:
   fromEmail: zvshrawder@gmail.com
   fromName: Zvshrawder
@@ -9,6 +9,10 @@ graphql:
     expiryDate: null
 plugins:
   assetrev:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  element-api:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
