@@ -1,0 +1,27 @@
+{%set search = craft.request.getQuery('search')%}
+
+{#
+# This is the search template!
+#}
+
+{% extends "_layout" %}
+{% set title = entry.heading %}
+
+{% block content %}
+
+<header>
+
+</header>
+
+<main role="main" class="container">
+
+    <h1>{{ title }}</h1>
+    {{entry.heading}}
+    {{ entry.body }}
+    {%include 'components'%}
+
+    {{search}}
+
+
+</main>
+{% endblock %}

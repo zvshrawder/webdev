@@ -1,14 +1,27 @@
-dateApplied: '2020-09-15 07:44:23'
+dateApplied: '2020-09-15 13:01:35'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-        from: 1600180057
-        to: 1600181061
+        from: 1600200053
+        to: 1600200093
   -
     added:
-      plugins.element-api.edition: standard
-      plugins.element-api.enabled: true
-      plugins.element-api.schemaVersion: 1.0.0
-    message: 'Install plugin “element-api”'
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.1.fieldUid: c6b046a1-ec24-472d-94f0-435257a0adef
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.1.instructions: null
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.1.label: null
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.1.required: false
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.1.tip: null
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.1.type: craft\fieldlayoutelements\CustomField
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.1.warning: null
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.1.width: 100
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.2.fieldUid: e691c0e9-d735-4ffd-a455-db6c790e8080
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.2.instructions: null
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.2.label: null
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.2.required: false
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.2.tip: null
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.2.type: craft\fieldlayoutelements\CustomField
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.2.warning: null
+      entryTypes.abf4fd7a-82b7-4608-b37c-f8e29f45a3bd.fieldLayouts.2ffb064e-209f-4724-87ac-3e68d60385ad.tabs.0.elements.2.width: 100
+    message: 'Save entry type “search”'

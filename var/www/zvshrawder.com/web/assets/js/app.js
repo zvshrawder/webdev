@@ -79,6 +79,7 @@ $(document).ready(function () {
     {
         //hide the div with the search icon and unhide the one with the search bar
         $('.header_bar').find('.searchContainer').has('input').removeClass('searchHidden');
+        $( "#headerSearchBox" ).focus();
         $('.header_bar').find('.searchContainer').has('a').addClass('searchHidden');
 
         el.preventDefault();
@@ -90,6 +91,19 @@ $(document).ready(function () {
 
     //send search to search page
     //trigered by pressing enter
+        $('.header_bar').on('keypress',"#headerSearchBox", function(en)
+        {
+            if(en.which == 13)
+            {
+                var url ="";
+                //get origin url
+                var origin   = window.location.origin;
+
+                var str = $("#headerSearchBox").val();
+                url=origin+"/search?search="+str;
+                window.location.assign(url);
+            }
+        });
 
 
     //getback prepopulated possible results (changes on text entry into the box
