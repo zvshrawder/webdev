@@ -3113,25 +3113,25 @@ INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sections_sites','cr
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sequences','PRIMARY','2020-09-15 14:05:33','n_diff_pfx01',0,1,'name');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sequences','PRIMARY','2020-09-15 14:05:33','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sequences','PRIMARY','2020-09-15 14:05:33','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','PRIMARY','2020-09-15 14:29:06','n_diff_pfx01',24,1,'id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','PRIMARY','2020-09-15 14:29:06','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','PRIMARY','2020-09-15 14:29:06','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-09-15 14:29:06','n_diff_pfx01',24,1,'dateUpdated');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-09-15 14:29:06','n_diff_pfx02',24,1,'dateUpdated,id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-09-15 14:29:06','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-09-15 14:29:06','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-09-15 14:29:06','n_diff_pfx01',24,1,'token');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-09-15 14:29:06','n_diff_pfx02',24,1,'token,id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-09-15 14:29:06','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-09-15 14:29:06','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-09-15 14:29:06','n_diff_pfx01',24,1,'uid');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-09-15 14:29:06','n_diff_pfx02',24,1,'uid,id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-09-15 14:29:06','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-09-15 14:29:06','size',1,NULL,'Number of pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-09-15 14:29:06','n_diff_pfx01',1,1,'userId');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-09-15 14:29:06','n_diff_pfx02',24,1,'userId,id');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-09-15 14:29:06','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
-INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-09-15 14:29:06','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','PRIMARY','2020-09-15 14:36:25','n_diff_pfx01',24,1,'id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','PRIMARY','2020-09-15 14:36:25','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','PRIMARY','2020-09-15 14:36:25','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-09-15 14:36:25','n_diff_pfx01',24,1,'dateUpdated');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-09-15 14:36:25','n_diff_pfx02',24,1,'dateUpdated,id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-09-15 14:36:25','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_dateUpdated_idx','2020-09-15 14:36:25','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-09-15 14:36:25','n_diff_pfx01',24,1,'token');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-09-15 14:36:25','n_diff_pfx02',24,1,'token,id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-09-15 14:36:25','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_token_idx','2020-09-15 14:36:25','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-09-15 14:36:25','n_diff_pfx01',24,1,'uid');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-09-15 14:36:25','n_diff_pfx02',24,1,'uid,id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-09-15 14:36:25','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_uid_idx','2020-09-15 14:36:25','size',1,NULL,'Number of pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-09-15 14:36:25','n_diff_pfx01',1,1,'userId');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-09-15 14:36:25','n_diff_pfx02',24,1,'userId,id');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-09-15 14:36:25','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
+INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_sessions','craft_sessions_userId_idx','2020-09-15 14:36:25','size',1,NULL,'Number of pages in the index');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_shunnedmessages','PRIMARY','2020-09-15 14:05:34','n_diff_pfx01',0,1,'id');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_shunnedmessages','PRIMARY','2020-09-15 14:05:34','n_leaf_pages',1,NULL,'Number of leaf pages in the index');
 INSERT INTO `innodb_index_stats` VALUES ('zvshrawder','craft_shunnedmessages','PRIMARY','2020-09-15 14:05:34','size',1,NULL,'Number of pages in the index');
@@ -3483,7 +3483,7 @@ INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_revisions','2020-09
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_sections','2020-09-15 14:05:35',6,1,4);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_sections_sites','2020-09-15 14:05:35',6,1,2);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_sequences','2020-09-15 14:05:33',0,1,0);
-INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_sessions','2020-09-15 14:29:06',24,1,4);
+INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_sessions','2020-09-15 14:36:25',24,1,4);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_shunnedmessages','2020-09-15 14:05:34',0,1,1);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_sitegroups','2020-09-15 14:05:34',0,1,1);
 INSERT INTO `innodb_table_stats` VALUES ('zvshrawder','craft_sites','2020-09-15 14:27:34',1,1,4);
@@ -6280,7 +6280,7 @@ CREATE TABLE `craft_info` (
 
 LOCK TABLES `craft_info` WRITE;
 /*!40000 ALTER TABLE `craft_info` DISABLE KEYS */;
-INSERT INTO `craft_info` VALUES (1,'3.5.9','3.5.13',0,'pnlzdqzrzzkh','88nJdsrr7o5P','2020-04-30 06:03:33','2020-09-15 14:28:53','dc9ea1da-ef0c-4364-b848-cb4c8c1cea3a');
+INSERT INTO `craft_info` VALUES (1,'3.5.9','3.5.13',0,'pnlzdqzrzzkh','88nJdsrr7o5P','2020-04-30 06:03:33','2020-09-15 14:36:23','dc9ea1da-ef0c-4364-b848-cb4c8c1cea3a');
 /*!40000 ALTER TABLE `craft_info` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -7129,9 +7129,9 @@ CREATE TABLE `craft_plugins` (
 
 LOCK TABLES `craft_plugins` WRITE;
 /*!40000 ALTER TABLE `craft_plugins` DISABLE KEYS */;
-INSERT INTO `craft_plugins` VALUES (1,'assetrev','6.0.2','1.0.0','unknown',NULL,'2020-04-30 06:11:04','2020-04-30 06:11:04','2020-09-15 14:29:04','3ff5b1b8-bd4a-4975-9ef0-dbb0659aacfb');
-INSERT INTO `craft_plugins` VALUES (2,'redactor','2.6.1','2.3.0','unknown',NULL,'2020-04-30 18:06:01','2020-04-30 18:06:01','2020-09-15 14:29:04','269f69e2-bffa-46d8-abb6-e67fbe764b24');
-INSERT INTO `craft_plugins` VALUES (5,'express-forms','1.0.6','1.0.1','unknown',NULL,'2020-05-13 02:40:26','2020-05-13 02:40:26','2020-09-15 14:29:04','341a2363-25e7-46c9-8768-711213254237');
+INSERT INTO `craft_plugins` VALUES (1,'assetrev','6.0.2','1.0.0','unknown',NULL,'2020-04-30 06:11:04','2020-04-30 06:11:04','2020-09-15 14:37:04','3ff5b1b8-bd4a-4975-9ef0-dbb0659aacfb');
+INSERT INTO `craft_plugins` VALUES (2,'redactor','2.7.4','2.3.0','unknown',NULL,'2020-04-30 18:06:01','2020-04-30 18:06:01','2020-09-15 14:37:04','269f69e2-bffa-46d8-abb6-e67fbe764b24');
+INSERT INTO `craft_plugins` VALUES (5,'express-forms','1.0.6','1.0.1','unknown',NULL,'2020-05-13 02:40:26','2020-05-13 02:40:26','2020-09-15 14:37:04','341a2363-25e7-46c9-8768-711213254237');
 /*!40000 ALTER TABLE `craft_plugins` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -8697,6 +8697,7 @@ INSERT INTO `craft_resourcepaths` VALUES ('1309f1a3','@app/web/assets/login/dist
 INSERT INTO `craft_resourcepaths` VALUES ('174ca2a3','@lib/jquery-ui');
 INSERT INTO `craft_resourcepaths` VALUES ('18938225','@craft/web/assets/login/dist');
 INSERT INTO `craft_resourcepaths` VALUES ('1909a090','@craft/web/assets/plugins/dist');
+INSERT INTO `craft_resourcepaths` VALUES ('1a0c25c5','@app/web/assets/updater/dist');
 INSERT INTO `craft_resourcepaths` VALUES ('1d9be2ea','@lib/axios');
 INSERT INTO `craft_resourcepaths` VALUES ('21579093','@app/web/assets/recententries/dist');
 INSERT INTO `craft_resourcepaths` VALUES ('255e425a','@app/web/assets/updates/dist');
@@ -9389,7 +9390,7 @@ INSERT INTO `craft_sessions` VALUES (27,1,'hLzEYdl99L_mXcKmCUu_fFH8LsCLunBuZ0Fja
 INSERT INTO `craft_sessions` VALUES (30,1,'G3wVd6yRl3lMOl8Q3VRMy_5uCmFo1TUqms8LJjS-yELeGCHFMbxKP_BuvcfqZGm-R6A7-uMmrZjCcnDNl62LsFn2QeOih4UHufPG','2020-09-04 07:40:17','2020-09-04 08:05:49','d367f381-880a-46e9-975b-9ca5e65e3fe4');
 INSERT INTO `craft_sessions` VALUES (31,1,'UtPRpE-VM1Xa3EyjV9Y2FcsbA_KRT8h4FITgZe_lUVlPQxRc0XYaxZEsLq8ZOnfIXLsrje4T1k07xpHtdAvk-ys6mQ0tiuSj8Rme','2020-09-06 01:29:59','2020-09-06 01:34:25','610860bd-8eb0-41ed-848a-885f32f4675c');
 INSERT INTO `craft_sessions` VALUES (32,1,'dteM0J0jfYH2pmAGWPo_5K_DBPYDd7frnGa2G7riEelxKgxUZa0L45DfoAE21fe2hfCRh_BawkpjW-xcPkZEP0EQUDGRoAyBDVsb','2020-09-09 20:07:50','2020-09-09 21:17:26','8d065782-047a-4253-8e09-fe0744e1cb61');
-INSERT INTO `craft_sessions` VALUES (34,1,'hojgOt47x5-ts7JM6c6a4_Wxx9lt5I23eWrsaG87KTdCBbNpEKyivW95vXUc_tVpthsdFyG90Xvpt17kdQiHLcCRWH1FayNqutM7','2020-09-15 14:22:26','2020-09-15 14:29:05','57c1b68c-e828-4eb2-8f66-fe671f6d9d06');
+INSERT INTO `craft_sessions` VALUES (34,1,'hojgOt47x5-ts7JM6c6a4_Wxx9lt5I23eWrsaG87KTdCBbNpEKyivW95vXUc_tVpthsdFyG90Xvpt17kdQiHLcCRWH1FayNqutM7','2020-09-15 14:22:26','2020-09-15 14:37:04','57c1b68c-e828-4eb2-8f66-fe671f6d9d06');
 /*!40000 ALTER TABLE `craft_sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -10207,4 +10208,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-09-15 14:30:09
+-- Dump completed on 2020-09-15 14:37:15
