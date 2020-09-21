@@ -1,8 +1,50 @@
+{#param for actual search string#}
 {%set search = craft.request.getQuery('search')%}
 
-{#
-# This is the search template!
-#}
+{#Param with order option#}
+{#options: defaults date desc, Date Asc, Alph Desc, Date Asc#}
+
+{%set order = craft.request.getQuery('order')%}
+{%if order == "dateAsc" %}
+    {%set order = "dateCreated ASC"%}
+{%elseif order == "alphDesc"%}
+    {%set order = "title DSC"%}
+{%elseif order == "alphAsc"%}
+    {%set order = "title ASC"%}
+{%else%}
+    {%set order = "dateCreated"%}
+{%endif%}
+
+
+{#param for limit per page#}
+{%set limit = craft.request.getQuery('limit')%}
+{% if limit < 1%}
+    {%set limit = 5 %}
+{% endif %}
+
+{#param for page number#}
+{%set pageNum = craft.request.getQuery('page')%}
+{% if pageNum  < 1%}
+    {%set pageNum = 1 %}
+{% endif %}
+
+
+
+
+{# set base query (for aditional sections just ad ,'sectionName', after it)#}
+{% set query = craft.entries().section(['projects'])%}
+
+{# set limit#}
+{% set query =query.limit(limit) %}
+
+{#Add Query#}
+{% set query =query.search(search) %}
+{% set query = query.orderBy(order) %}
+{#add ordering#}
+
+{# run the query#}
+{% set entries = query.all() %}
+
 
 {% extends "_layout" %}
 {% set title = entry.heading %}
@@ -20,7 +62,61 @@
     {{ entry.body }}
     {%include 'components'%}
 
-    {{search}}
+
+
+    <div class="row">
+        <div class="col-md-2">&nbsp; </div>
+        <div class="col-md-8">
+            <form>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                    <input class="form-control form-control-lg" type="text" id="search" value="{{search}}">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="sort">Sort By</label>
+                            </div>
+                            <select class="custom-select form-control" id="sort">
+                                <option selected value="dateDesc">Date &#x02193</option>
+                                <option value="dateAsc">Date &#x02191</option>
+                                <option value="alphDesc">A-Z &#x02193</option>
+                                <option value="alphAsc">A-Z &#x02191</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-group col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="number">Results per Page</label>
+                            </div>
+                            <select class="custom-select form-control" id="number">
+                                <option selected value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+        <div class="col-md-2">&nbsp; </div>
+    </div>
+
+    <!--results row-->
+    <div class="row results">
+
+    </div>
+
+    <!--page row-->
+
+
+
 
 
 </main>
