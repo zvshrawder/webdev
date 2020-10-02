@@ -112,7 +112,12 @@
     </div>
 
     <!--results row-->
-    <div class="row results">
+    <div class="row resultsContainer">
+        <div class="col-md-2">&nbsp;</div>
+        <div class="col-md-8">
+        {{ _self.results(entries) }}
+        </div>
+        <div class="col-md-2">&nbsp;</div>
 
     </div>
 
@@ -125,4 +130,27 @@
 </main>
 
 <!--macros for the search results-->
+{%macro results(results)%}
+    {%  for result in results%}
+        {{  dump(result)}}
+    {% endfor %}
+{%endmacro%}
+
+{%macro resultRow(result)%}
+    <div class="row">
+        <!--image-->
+        <div class="col-md-4">
+
+        </div>
+        <!--title as link-->
+        <div class="col-md-4">
+
+        </div>
+        <!--description-->
+        <div class="col-md-4">
+
+        </div>
+    </div>
+
+{%endmacro%}
 {% endblock %}
