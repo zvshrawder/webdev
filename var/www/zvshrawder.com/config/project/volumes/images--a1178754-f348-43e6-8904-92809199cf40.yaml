@@ -1,3 +1,42 @@
+fieldLayouts:
+  04c7c0f9-1b5c-4336-a63c-d592c0ffe8ce:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: b9914c64-81e4-47d1-96a6-529781413a38
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
 handle: images
 hasUrls: true
 name: Images
