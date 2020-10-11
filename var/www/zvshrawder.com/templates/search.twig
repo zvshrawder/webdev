@@ -32,18 +32,18 @@
 
 
 {# set base query (for aditional sections just ad ,'sectionName', after it)#}
-{% set query = craft.entries().section(['projects'])%}
+{% set query = craft.entries().status('enabled').section(['project'])%}
 
 {# set limit#}
 {% set query =query.limit(limit) %}
 
 {#Add Query#}
-{% set query =query.search(search) %}
+{% set query = query.search(search) %}
 {% set query = query.orderBy(order) %}
 {#add ordering#}
 
 {# run the query#}
-{% set entries = query.all() %}
+{% set searchResults = query.all() %}
 
 
 {% extends "_layout" %}
@@ -100,6 +100,7 @@
                         </div>
 
                     </div>
+
                     <div class="form-group col-md-12">
                         <button type="button" class="btn btn-primary searchPageButton">Primary</button>
                     </div>
@@ -115,7 +116,7 @@
     <div class="row resultsContainer">
         <div class="col-md-2">&nbsp;</div>
         <div class="col-md-8">
-        {{ _self.results(entries) }}
+        {{ _self.results(searchResults) }}
         </div>
         <div class="col-md-2">&nbsp;</div>
 
@@ -132,7 +133,13 @@
 <!--macros for the search results-->
 {%macro results(results)%}
     {%  for result in results%}
-        {{  dump(result)}}
+        {%if   result.type.name == "Project"%}
+            {{ _self.projectResultRow(result) }}
+
+        {% else %}
+            {{ _self.resultRow(result) }}
+        {%endif %}
+
     {% endfor %}
 {%endmacro%}
 
@@ -152,5 +159,26 @@
         </div>
     </div>
 
+{%endmacro%}
+{%macro projectResultRow(result)%}
+    {% set descriptiveFields = result.projectDescriptiveFields.one()%}
+    {% set descriptiveImage =  descriptiveFields.descriptiveImage.one()%}
+    <div class="row searchResultRow">
+        <!--image-->
+        <div class="col-md-4 searchImage">
+            <img class="img-fluid" src="{{descriptiveImage.url}}" alt="{{descriptiveImage.title}}">
+
+        </div>
+        <!--title as link-->
+        <div class="col-md-4 searchEntryTitle">
+            <h5><a href="{{result.url}}">{{ result.title }}</a></h5>
+
+        </div>
+        <!--description-->
+        <div class="col-md-4">
+            <h5>{{ descriptiveFields.shortDescription }}</h5>
+
+        </div>
+    </div>
 {%endmacro%}
 {% endblock %}
