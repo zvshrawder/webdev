@@ -281,3 +281,27 @@ h4
 {
     display:none;
 }
+
+
+/*search page*/
+.searchResultRow
+{
+    border-style: solid;
+    border-color: #1d69ab;
+
+}
+.searchEntryImage
+{
+    padding-left: 0;
+    padding-right: 0;
+
+}
+.searchEntryTitle
+{
+    text-align: center;
+
+}
+.searchEntryDescription
+{
+    text-align: center;
+}
