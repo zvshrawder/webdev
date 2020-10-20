@@ -5,11 +5,11 @@
 {#options: defaults date desc, Date Asc, Alph Desc, Date Asc#}
 
 {%set order = craft.request.getQuery('sort')%}
-{%if order == "dateAsc" %}
+{%if order == "dateCreated asc" %}
     {%set order = "dateCreated asc"%}
-{%elseif order == "alphDesc"%}
+{%elseif order == "title desc"%}
     {%set order = "title desc"%}
-{%elseif order == "alphAsc"%}
+{%elseif order == "title asc"%}
     {%set order = "title asc"%}
 {%else%}
     {%set order = "dateCreated desc"%}
@@ -80,7 +80,6 @@
     {{ entry.body }}
     {%include 'components'%}
 
-
     <div class="row">
         <div class="col-md-2">&nbsp; </div>
         <div class="col-md-8">
@@ -95,22 +94,22 @@
                                 <label class="input-group-text" for="sort">Sort By</label>
                             </div>
                             <select class="custom-select form-control" id="sort" name="sort">
-                                <option selected value="dateDesc"
+                                <option selected value="dateCreated desc"
                                         {% if  order == "dateCreated desc"%}
                                             selected
                                         {% endif %}
                                 >Date &#x02193</option>
-                                <option value="dateAsc"
+                                <option value="dateCreated asc"
                                         {% if  order == "dateCreated asc"%}
                                             selected
                                         {% endif %}
                                 >Date &#x02191</option>
-                                <option value="alphDesc"
+                                <option value="title desc"
                                         {% if  order == "title desc"%}
                                             selected
                                         {% endif %}
                                 >A-Z &#x02193</option>
-                                <option value="alphAsc"
+                                <option value="title asc"
                                         {% if  order == "title asc"%}
                                             selected
                                         {% endif %}
@@ -246,7 +245,7 @@
                     <
                     {% else %}
 
-                    <a class="" href="{{ siteUrl }}/search?search={{search}}&order={{ order}}&page={{ pageNum-1 }}"><</a>
+                    <a class="" href="{{ siteUrl }}/search?search={{search}}&sort={{ order}}&page={{ pageNum-1 }}"><</a>
                 {% endif %}
 
             {% endif %}
@@ -256,7 +255,7 @@
             {% if i == pageNum %}
                 {{ i }}
                 {% else %}
-                <a class="" href="{{ siteUrl }}/search?search={{search}}&order={{ order}}&page={{ i }}">{{ i }}</a>
+                <a class="" href="{{ siteUrl }}/search?search={{search}}&sort={{ order}}&page={{ i }}">{{ i }}</a>
             {% endif %}
         {% endfor %}
 
@@ -265,7 +264,7 @@
                 {% if pageCount == pageNum%}
                     >
                     {% else%}
-                        <a class="" href="{{ siteUrl  }}/search?search={{search}}&order={{ order}}&page={{ pageNum+1 }}"> > </a>
+                        <a class="" href="{{ siteUrl  }}/search?search={{search}}&sort={{ order}}&page={{ pageNum+1 }}"> > </a>
                 {% endif %}
             {% endif %}
             </div>
