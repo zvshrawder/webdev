@@ -4,15 +4,15 @@
 {#Param with order option#}
 {#options: defaults date desc, Date Asc, Alph Desc, Date Asc#}
 
-{%set order = craft.request.getQuery('order')%}
+{%set order = craft.request.getQuery('sort')%}
 {%if order == "dateAsc" %}
-    {%set order = "dateCreated ASC"%}
+    {%set order = "dateCreated asc"%}
 {%elseif order == "alphDesc"%}
-    {%set order = "title DSC"%}
+    {%set order = "title desc"%}
 {%elseif order == "alphAsc"%}
-    {%set order = "title ASC"%}
+    {%set order = "title asc"%}
 {%else%}
-    {%set order = "dateCreated"%}
+    {%set order = "dateCreated desc"%}
 {%endif%}
 
 
@@ -95,10 +95,26 @@
                                 <label class="input-group-text" for="sort">Sort By</label>
                             </div>
                             <select class="custom-select form-control" id="sort" name="sort">
-                                <option selected value="dateDesc">Date &#x02193</option>
-                                <option value="dateAsc">Date &#x02191</option>
-                                <option value="alphDesc">A-Z &#x02193</option>
-                                <option value="alphAsc">A-Z &#x02191</option>
+                                <option selected value="dateDesc"
+                                        {% if  order == "dateCreated desc"%}
+                                            selected
+                                        {% endif %}
+                                >Date &#x02193</option>
+                                <option value="dateAsc"
+                                        {% if  order == "dateCreated asc"%}
+                                            selected
+                                        {% endif %}
+                                >Date &#x02191</option>
+                                <option value="alphDesc"
+                                        {% if  order == "title desc"%}
+                                            selected
+                                        {% endif %}
+                                >A-Z &#x02193</option>
+                                <option value="alphAsc"
+                                        {% if  order == "title asc"%}
+                                            selected
+                                        {% endif %}
+                                >A-Z &#x02191</option>
                             </select>
                         </div>
 
