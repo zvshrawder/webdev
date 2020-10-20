@@ -17,16 +17,24 @@
 
 
 {#param for limit per page#}
-{%set limit = craft.request.getQuery('limit')%}
+{%set limit = craft.request.getQuery('number')%}
 {% if limit < 1%}
     {%set limit = 5 %}
+    {% elseif limit != 5 and limit != 10 and limit != 15 and limit != 20 %}
+        {%set limit = 5 %}
 {% endif %}
+
+
+
+
 
 {#param for page number#}
 {%set pageNum = craft.request.getQuery('page')%}
 {% if pageNum  < 1%}
     {%set pageNum = 1 %}
 {% endif %}
+
+{% set resultStart =  ((pageNum -1) * limit ) %}
 
 
 
@@ -35,6 +43,7 @@
 {% set query = craft.entries().status('enabled').section(['project'])%}
 
 {# set limit#}
+{% set query =query.offset(resultStart) %}
 {% set query =query.limit(limit) %}
 
 {#Add Query#}
@@ -44,6 +53,15 @@
 
 {# run the query#}
 {% set searchResults = query.all() %}
+{% set queryCount = query.count() %}
+{% set pageCount = 1 %}
+{% if((queryCount/limit) > 0) %}
+        {% set pageCount=  (queryCount/limit)|round(0,'floor')+1 %}
+    {% else %}
+        {% set pageCount=  queryCount/limit|round(0,'floor') %}
+
+{% endif %}
+{# comute page number#}
 
 
 {% extends "_layout" %}
@@ -63,21 +81,20 @@
     {%include 'components'%}
 
 
-
     <div class="row">
         <div class="col-md-2">&nbsp; </div>
         <div class="col-md-8">
             <form>
                 <div class="row">
                     <div class="form-group col-md-12">
-                    <input class="form-control form-control-lg" type="text" id="search" value="{{search}}">
+                    <input class="form-control form-control-lg" type="text" id="search" name="search"value="{{search}}">
                     </div>
                     <div class="form-group col-md-6">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="sort">Sort By</label>
                             </div>
-                            <select class="custom-select form-control" id="sort">
+                            <select class="custom-select form-control" id="sort" name="sort">
                                 <option selected value="dateDesc">Date &#x02193</option>
                                 <option value="dateAsc">Date &#x02191</option>
                                 <option value="alphDesc">A-Z &#x02193</option>
@@ -91,18 +108,35 @@
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="number">Results per Page</label>
                             </div>
-                            <select class="custom-select form-control" id="number">
-                                <option selected value="5">5</option>
-                                <option value="10">10</option>
-                                <option value="15">15</option>
-                                <option value="20">20</option>
+                            <select class="custom-select form-control" id="number" name="number">
+                                <option value="5"
+                                        {#if 5 = selected#}
+                                        {% if limit == 5 %}
+                                            selected
+                                        {% endif %}
+                                >5</option>
+                                <option value="10"
+                                        {% if limit == 10 %}
+                                            selected
+                                        {% endif %}
+                                >10</option>
+                                <option value="15"
+                                        {% if limit == 15 %}
+                                            selected
+                                        {% endif %}
+                                >15</option>
+                                <option value="20"
+                                        {% if limit == 20 %}
+                                            selected
+                                        {% endif %}
+                                >20</option>
                             </select>
                         </div>
 
                     </div>
 
-                    <div class="form-group col-md-12 searchButtonCol">
-                        <button type="button" class="btn btn-primary btn-lg searchPageButton">Search</button>
+                    <div class="col-md-12 searchButtonCol">
+                        <button type="submit" class="btn btn-primary btn-lg searchPageButton">Search</button>
                     </div>
 
                 </div>
@@ -121,6 +155,7 @@
         <div class="col-md-2">&nbsp;</div>
 
     </div>
+    {{ _self.pageNums(search,order,limit,pageNum,resultStart,queryCount,pageCount) }}
 
     <!--page row-->
 
@@ -181,4 +216,46 @@
         </div>
     </div>
 {%endmacro%}
+
+    {% macro pageNums(search,order,limit,pageNum,resultStart,queryCount,pageCount) %}
+        {% set i = 0 %}
+        <div class="row searchPageRow">
+            <div class="col-md-2 searchPageBarSpacer"></div>
+            <div class="col-md-8 searchPageBar">
+
+        {##}
+            {#Back arrow#}
+            {% if pageCount > 1 %}
+                {% if pageNum == 1 %}
+                    <
+                    {% else %}
+
+                    <a class="" href="{{ siteUrl }}/search?search={{search}}&order={{ order}}&page={{ pageNum-1 }}"><</a>
+                {% endif %}
+
+            {% endif %}
+
+        {% for i in 1..pageCount %}
+
+            {% if i == pageNum %}
+                {{ i }}
+                {% else %}
+                <a class="" href="{{ siteUrl }}/search?search={{search}}&order={{ order}}&page={{ i }}">{{ i }}</a>
+            {% endif %}
+        {% endfor %}
+
+            {#forward arrow#}
+            {% if pageCount > 1 %}
+                {% if pageCount == pageNum%}
+                    >
+                    {% else%}
+                        <a class="" href="{{ siteUrl  }}/search?search={{search}}&order={{ order}}&page={{ pageNum+1 }}"> > </a>
+                {% endif %}
+            {% endif %}
+            </div>
+            <div class="col-md-2 searchPageBarSpacer"></div>
+        </div>
+
+    {% endmacro %}
 {% endblock %}
+
