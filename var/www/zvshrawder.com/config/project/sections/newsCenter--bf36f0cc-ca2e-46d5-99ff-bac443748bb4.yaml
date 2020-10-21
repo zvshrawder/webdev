@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: newsCenter
+name: 'News Center'
+propagationMethod: all
+siteSettings:
+  31a71437-b85c-4bac-aa28-244f320824a5:
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: news-center
+type: single
