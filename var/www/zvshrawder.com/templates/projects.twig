@@ -1,0 +1,111 @@
+{% extends "_layout" %}
+{% set title = entry.heading %}
+
+{% block content %}
+
+{%set category = craft.request.getQuery('category')%}
+{% if category is null%}
+    {%set category = "all"%}
+{% endif %}
+
+<header>
+
+</header>
+
+<main role="main" class="container-fluid">
+
+    <h1>{{ title }}</h1>
+    {{entry.heading}}
+
+    <div class="row">
+        <div class="col-lg-1 projectCategoriesBar">
+            {{ _self.projectTagSideBar(category) }}
+        </div>
+
+        <div class="col-lg-9 projectsSection">
+        {{ _self.default(category) }}
+
+        </div>
+        <div class="col-lg-2 projectsSpacer"></div>
+    </div>
+    {{ entry.body }}
+
+    {%include 'components'%}
+
+
+
+
+</main>
+{#Output a bar of program categories#}
+{%macro projectTagSideBar(currentCategory)%}
+
+    {#Project Category query#}
+    {% set query = craft.categories().group('projectTags')%}
+    {% set results= query.all()%}
+
+
+    {#output tags#}
+    {% set matched = false %}
+    <div class="row projectTagSideBar">
+    {% for result in results %}
+        <div class="col-lg-12">
+            {#Url encodeing since some names won't work without it, won't need to use decode since getting
+            the value from the url with twig does it automatiically#}
+            <a href="?category={{result.title|url_encode}}" class="btn  btn-sm
+            {% if  currentCategory == result.title%}
+                btn-primary
+                {% set matched = true %}
+            {% else %}
+                btn-secondary
+            {% endif %}
+            " role="button" aria-pressed="true">{{ result.title }}</a>
+        </div>
+    {% endfor %}
+        <div class="col-sm-12">
+            <a href="?category=all" class="btn  btn-sm
+            {% if  matched%}
+                btn-secondary
+                {% set matched = true %}
+            {% else %}
+                btn-primary
+            {% endif %}
+            " role="button" aria-pressed="true">All</a>
+        </div>
+    </div>
+
+
+{% endmacro %}
+
+{%macro default(category)%}
+
+    <div class="row">
+        {{ _self.completed_Projects_Box(category) }}
+        {{ _self.inprogress_Projects_Box(category) }}
+        {{ _self.not_Started_Projects_Box(category) }}
+
+
+
+    </div>
+
+
+{% endmacro %}
+
+{%macro completed_Projects_Box(category)%}
+    <div class="col-lg-6 projectsCompletedBox" >
+        sad
+    </div>
+
+{%endmacro%}
+
+{%macro inprogress_Projects_Box(category)%}
+    <div class="col-lg-6 projectsIncompleteBox" >
+        asdas
+    </div>
+{%endmacro%}
+
+{%macro not_Started_Projects_Box(category)%}
+    <div class="col-lg-6 projectsNotStartedBox" >
+        asd
+    </div>
+{%endmacro%}
+{% endblock %}

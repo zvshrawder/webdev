@@ -316,3 +316,26 @@ h4
 {
     text-align: center;
 }
+
+
+/*Projects page*/
+
+.projectsCompletedBox
+{
+    background-color: #c0c0c0;
+    border-style: dashed;
+    border-color: #1d69ab;
+
+}
+.projectsIncompleteBox
+{
+    background-color: #c0c0c0;
+    border-style: dashed;
+    border-color: darkorange;
+}
+.projectsNotStartedBox
+{
+    background-color: #c0c0c0;
+    border-style: dashed;
+    border-color: red;
+}
