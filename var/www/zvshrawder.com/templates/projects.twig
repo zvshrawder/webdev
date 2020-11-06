@@ -91,6 +91,12 @@
 {% endmacro %}
 
 {%macro completed_Projects_Box(category)%}
+    {% set query = craft.entries().status('enabled').section(['project'])%}
+    {%  set results = query.first()%}
+    {#fieldid 37 matches to our projectDescriptiveFields we need to use this since type matches for all with a matching valid name
+    so projectDescriptiveFields and projectDescriptiveFields2 would both match#}
+    {% set completedProjectsMatrixBlocks = craft.matrixBlocks.type('projectDescriptiveFields').fieldid(37).projectStatus('completed').all() %}
+
     <div class="col-lg-6 projectsCompletedBox" >
         sad
     </div>
@@ -98,14 +104,33 @@
 {%endmacro%}
 
 {%macro inprogress_Projects_Box(category)%}
+    {% set inProgressProjectsMatrixBlocks = craft.matrixBlocks.type('projectDescriptiveFields').fieldid(37).projectStatus('inProgress').all() %}
     <div class="col-lg-6 projectsIncompleteBox" >
         asdas
     </div>
 {%endmacro%}
 
 {%macro not_Started_Projects_Box(category)%}
+    {#get valid of matrix blocks (projectDetails in this case#}
+    {% set notStartedProjectsMatrixBlocks = craft.matrixBlocks.type('projectDescriptiveFields').fieldid(37).projectStatus('notStarted').all() %}
+
+    {#get owner entry Ids from results#}
+    {% set  notStartedProjectsMatrixBlockIds = [] %}
+    {%for notStartedProjectsMatrixBlock in notStartedProjectsMatrixBlocks  %}
+        {% set  notStartedProjectsMatrixBlockIds = notStartedProjectsMatrixBlockIds|merge([notStartedProjectsMatrixBlock['ownerId']]) %}
+    {% endfor %}
+
+
+    {#get projects of those ids#}
+    {% set results = craft.entries().status('enabled').section(['project']).id(notStartedProjectsMatrixBlockIds).orderBy('dateUpdated desc').limit(3).all()%}
+
     <div class="col-lg-6 projectsNotStartedBox" >
-        asd
+        {% for  result in results%}
+            <div class="row">
+                {{ result.title }}
+            </div>
+
+        {% endfor %}
     </div>
 {%endmacro%}
 {% endblock %}
